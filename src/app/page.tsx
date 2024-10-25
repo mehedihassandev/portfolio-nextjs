@@ -1,3 +1,5 @@
+import HomePage from "@app/(pages)/_home/page";
+
 export default function Home() {
-    return <h1 className="text-red-500">home</h1>;
+    return <HomePage />;
 }
