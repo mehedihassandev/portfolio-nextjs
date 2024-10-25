@@ -4,7 +4,7 @@ export const Hero = () => {
     return (
         <>
             <div
-                className="px-5 lg:px-24 flex flex-col justify-center items-center h-screen max-w-screen-2xl mx-auto absolute top-0 left-0 right-0 z-40"
+                className="px-5 lg:px-24 flex flex-col justify-center items-center h-screen max-w-screen-2xl mx-auto relative top-0 left-0 right-0 z-40"
                 id="about"
             >
                 <Image
@@ -60,7 +60,7 @@ export const Hero = () => {
                 alt="ellipse"
                 width={660}
                 height={860}
-                className="absolute top-[550px] lg:top-[75px] left-[80px] w-[660px] h-[860px] z-10"
+                className="absolute top-[550px] lg:top-[75px] left-[80px] w-[660px] h-[800px] z-10"
             />
         </>
     );
