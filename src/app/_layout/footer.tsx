@@ -14,7 +14,7 @@ export const Footer = () => {
                         </h5>
                         <h2 className="text-[40px] font-bold text-black leading-[54px]">
                             Let’s Discuss Your
-                            <span className="text-primary">Project</span>
+                            <span className="text-primary"> Project</span>
                         </h2>
                         <p className="mt-4 text-[16px] text-[#323433] leading-[24px] px-[130px]">
                             Let’s make something new, different and more

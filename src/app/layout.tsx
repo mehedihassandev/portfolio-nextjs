@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body>
+            <body className="font-inter">
                 <Header />
                 <div className="min-h-screen">{children}</div>
                 <Footer />
