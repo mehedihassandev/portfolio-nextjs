@@ -4,6 +4,7 @@ export const ROUTES = {
     PORTFOLIO: "/portfolio",
     TESTIMONIAL: "/testimonial",
     CONTACT: "/contact",
+    CASE_STUDY: "/case-study",
 };
 
 export const LINKS = {
@@ -12,4 +13,5 @@ export const LINKS = {
     PORTFOLIO: "/portfolio",
     TESTIMONIAL: "/testimonial",
     CONTACT: "/contact",
+    CASE_STUDY: "/case-study",
 };

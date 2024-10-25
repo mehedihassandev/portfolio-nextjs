@@ -17,13 +17,13 @@ export const menus = [
         linkUrl: ROUTES.PORTFOLIO,
     },
     {
-        id: "testimonial",
-        linkTitle: "Testimonial",
-        linkUrl: ROUTES.TESTIMONIAL,
+        id: "case-study",
+        linkTitle: "Case Study",
+        linkUrl: ROUTES.CASE_STUDY,
     },
-    {
-        id: "contact",
-        linkTitle: "Contact",
-        linkUrl: ROUTES.CONTACT,
-    },
+    // {
+    //     id: "contact",
+    //     linkTitle: "Contact",
+    //     linkUrl: ROUTES.CONTACT,
+    // },
 ];
