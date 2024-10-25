@@ -23,7 +23,7 @@ export const Header = () => {
 
     return (
         <header className="bg-white fixed top-0 left-0 w-full z-50 py-4">
-            <nav className="nav flex flex-wrap items-center max-w-screen-2xl justify-between m-auto px-14">
+            <nav className="nav flex flex-wrap items-center max-w-screen-2xl justify-between m-auto px-5 lg:px-14">
                 <div className="p-4 flex justify-between">
                     <Image
                         src="/assets/logo.png"

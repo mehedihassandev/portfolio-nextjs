@@ -141,7 +141,7 @@ export const Footer = () => {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 border-solid border-t border-t-black py-4 items-center justify-between">
-                <p className="text-sm md:text-base text-left font-semibold leading-relaxed lg:leading-8">
+                <p className="text-sm md:text-base text-left font-medium leading-relaxed lg:leading-8">
                     © 2024 Developed by{" "}
                     <a
                         className="text-primary"
@@ -152,7 +152,7 @@ export const Footer = () => {
                     </a>
                 </p>
 
-                <h4 className="text-sm md:text-base leading-[16px] text-black font-semibold text-right pt-3 md:pt-0">
+                <h4 className="text-sm md:text-base leading-[16px] text-black font-medium text-right pt-3 md:pt-0">
                     Designed by Shihab Parves
                 </h4>
                 {/* <div className="hidden md:flex justify-end gap-4">
