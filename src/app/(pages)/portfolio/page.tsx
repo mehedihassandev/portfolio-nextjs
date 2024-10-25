@@ -34,7 +34,7 @@ export const PortfolioPage = () => {
                                 key={index}
                                 className="flex flex-col overflow-hidden"
                             >
-                                <a href="#">
+                                <a href={item.link} target="_blank">
                                     <div className="group m-0 flex">
                                         <div className="z-10 overflow-hidden rounded-xl transition duration-300 ease-in-out">
                                             <Image
