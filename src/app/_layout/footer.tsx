@@ -1,7 +1,73 @@
+"use client";
+
 import Image from "next/image";
-import { contactInfo } from "@app/_constant";
+import { contactInfo, FromDefaultValues } from "@app/_constant";
+import { useState, useEffect } from "react";
+import { contactFormSchema, ContactFormSchema } from "../_schemas";
+import { ErrorMessage } from "../_components/error-message";
 
 export const Footer = () => {
+    const [formData, setFormData] = useState<ContactFormSchema>(FromDefaultValues);
+    const [errors, setErrors] = useState<Partial<ContactFormSchema>>({});
+    const [debounceTimeout, setDebounceTimeout] = useState<NodeJS.Timeout | null>(null);
+
+    const validateField = (name: keyof ContactFormSchema, value: string) => {
+        console.log('Validating field:', value)
+        const result = contactFormSchema.safeParse({ ...formData, [name]: value });
+        if (!result.success) {
+            const fieldErrors = result.error.flatten().fieldErrors;
+            setErrors((prevErrors) => ({
+                ...prevErrors,
+                [name]: fieldErrors[name]?.[0],
+            }));
+        } else {
+            setErrors((prevErrors) => ({
+                ...prevErrors,
+                [name]: undefined,
+            }));
+        }
+    };
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({ ...prev, [name]: value }));
+
+        if (debounceTimeout) {
+            clearTimeout(debounceTimeout);
+        }
+
+        const timeoutId = setTimeout(() => {
+            validateField(name as keyof ContactFormSchema, value);
+        }, 1000);
+
+        setDebounceTimeout(timeoutId);
+    };
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        const result = contactFormSchema.safeParse(formData);
+        if (!result.success) {
+            const fieldErrors = result.error.flatten().fieldErrors;
+            const transformedErrors = Object.fromEntries(
+                Object.entries(fieldErrors).map(([key, value]) => [key, value?.[0]])
+            );
+            setErrors(transformedErrors);
+        } else {
+            setErrors({});
+            // Handle form submission
+            console.log('Form data:', formData);
+            setFormData(FromDefaultValues);
+        }
+    };
+
+    useEffect(() => {
+        return () => {
+            if (debounceTimeout) {
+                clearTimeout(debounceTimeout);
+            }
+        };
+    }, [debounceTimeout]);
+
     return (
         <footer className="bg-white " id="footer">
             <div className="px-5 lg:px-24 pt-16 pb-3 mx-auto max-w-screen-2xl m-auto">
@@ -22,9 +88,9 @@ export const Footer = () => {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-2 mb-10">
-                    <div className="h-full pt-12 flex flex-col gap-1 lg:gap-2">
+                    <div className="h-full pt-12 flex flex-col gap-10">
                         {contactInfo.map((info) => (
-                            <div className="flex pb-8" key={info.id}>
+                            <div className="flex" key={info.id}>
                                 <div className="flex h-[50px] w-[50px] items-center justify-center bg-[#0DB760] text-black rounded-md">
                                     <Image
                                         src={info.icon}
@@ -33,18 +99,100 @@ export const Footer = () => {
                                         height={25}
                                     />
                                 </div>
-                                <div className="ml-4 mb-4">
-                                    <h3 className="mb-2 text-lg font-medium leading-6 text-black">
+                                <div className="ml-4">
+                                    <h3 className="text-lg font-medium leading-6 text-black">
                                         {info.title}
                                     </h3>
-                                    <p className="text-gray-600 dark:text-slate-400">
+                                    <p className="text-gray-600 dark:text-slate-400 text-base">
                                         {info.description}
                                     </p>
                                 </div>
                             </div>
                         ))}
                     </div>
+
+                    <div className="card h-fit mt-5" id="form">
+                        <form id="contactForm" onSubmit={handleSubmit}>
+                            <div>
+                                <div className="flex gap-5 mb-5">
+                                    <div className="w-full">
+                                        <input
+                                            type="text"
+                                            id="name"
+                                            placeholder="Full Name"
+                                            className="mb-2 w-full rounded-md border border-[#BEC0BF] py-3 pl-4 shadow-md"
+                                            name="name"
+                                            value={formData.name}
+                                            onChange={handleChange}
+                                            title={errors.name ? errors.name : ""}
+                                        />
+                                        <ErrorMessage message={errors.name} />
+                                    </div>
+                                    <div className="w-full">
+                                        <input
+                                            type="text"
+                                            id="email"
+                                            placeholder="Your email"
+                                            className="mb-2 w-full rounded-md border border-[#BEC0BF] py-3 pl-4 shadow-md"
+                                            name="email"
+                                            value={formData.email}
+                                            onChange={handleChange}
+                                        />
+                                        <ErrorMessage message={errors.email} />
+                                    </div>
+                                </div>
+                                <div className="flex gap-5 mb-5">
+                                    <div className="w-full">
+                                        <input
+                                            type="text"
+                                            id="phoneNumber"
+                                            placeholder="Phone Number"
+                                            className="mb-2 w-full rounded-md border border-[#BEC0BF] py-3 pl-4 shadow-md"
+                                            name="phoneNumber"
+                                            value={formData.phoneNumber}
+                                            onChange={handleChange}
+                                        />
+                                        <ErrorMessage message={errors.phoneNumber} />
+                                    </div>
+                                    <div className="w-full">
+                                        <input
+                                            type="text"
+                                            id="budget"
+                                            placeholder="Budget"
+                                            className="mb-2 w-full rounded-md border border-[#BEC0BF] py-3 pl-4 shadow-md"
+                                            name="budget"
+                                            value={formData.budget}
+                                            onChange={handleChange}
+                                        />
+                                        <ErrorMessage message={errors.budget} />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="mx-0 mb-1 sm:mb-4">
+                                <textarea
+                                    id="textarea"
+                                    name="textarea"
+                                    cols={30}
+                                    rows={5}
+                                    placeholder="Write your message..."
+                                    className="mb-2 w-full rounded-md border border-[#BEC0BF] py-3 pl-4 shadow-md"
+                                    value={formData.textarea}
+                                    onChange={handleChange}
+                                ></textarea>
+                                <ErrorMessage message={errors.textarea} />
+                            </div>
+                            <div className="text-right">
+                                <button
+                                    type="submit"
+                                    className="w-60 bg-[#0DB760] text-white px-6 py-3 font-xl rounded-md sm:mb-0"
+                                >
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
+
                 <div className="grid grid-cols-1 lg:grid-cols-2 border-solid border-t border-t-black py-4 items-center justify-between px-5">
                     <p className="text-sm md:text-base text-black text-left font-medium leading-relaxed lg:leading-8">
                         © 2024 Developed by{" "}

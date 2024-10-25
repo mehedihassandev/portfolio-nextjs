@@ -1,3 +1,5 @@
+import { IContactForm } from "../_models/contact";
+
 export const contactInfo = [
     {
         id: 1,
@@ -21,3 +23,11 @@ export const contactInfo = [
         description: "Mirpur, Dhaka, Bangladesh.",
     },
 ];
+
+export const FromDefaultValues: IContactForm = {
+    name: '',
+    email: '',
+    phoneNumber: '',
+    budget: '',
+    textarea: '',
+  };
