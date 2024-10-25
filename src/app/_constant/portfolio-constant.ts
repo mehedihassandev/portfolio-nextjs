@@ -32,3 +32,66 @@ export const portfolioItems = [
         link: "#",
     },
 ];
+
+export const portfolioPageItems = [
+    {
+        src: "/assets/portfolio1.png",
+        title: "NBDXCOIN Fintech",
+        subtitle: "01 -- Dashboard",
+        alt: "NBDXCOIN Fintech",
+    },
+    {
+        src: "/assets/portfolio2.png",
+        title: "Plant Store",
+        subtitle: "02 -- App",
+        alt: "Plant Store",
+    },
+    {
+        src: "/assets/portfolio3.png",
+        title: "Sport Mountain Bikes Shop",
+        subtitle: "03 -- App",
+        alt: "Sport Mountain Bikes Shop",
+    },
+    {
+        src: "/assets/portfolio4.png",
+        title: "Easywax Cryptocurrency Wallet",
+        subtitle: "04 -- Website",
+        alt: "Easywax Cryptocurrency Wallet",
+    },
+    {
+        src: "/assets/portfolio5.png",
+        title: "Lift Aircraft",
+        subtitle: "05 -- Landing Page Design",
+        alt: "Lift Aircraft",
+    },
+    {
+        src: "/assets/portfolio6.png",
+        title: "TimepieceX",
+        subtitle: "06 -- Smart Watch Project",
+        alt: "TimepieceX",
+    },
+    {
+        src: "/assets/portfolio7.png",
+        title: "Sound Orbit",
+        subtitle: "07 -- App",
+        alt: "Sound Orbit",
+    },
+    {
+        src: "/assets/portfolio8.png",
+        title: "Sentry Ammo (USA)",
+        subtitle: "08 -- Website",
+        alt: "Sentry Ammo (USA)",
+    },
+    {
+        src: "/assets/portfolio9.png",
+        title: "ZocDoc Online Doctor's Consulting",
+        subtitle: "09 -- App",
+        alt: "ZocDoc Online Doctor's Consulting",
+    },
+    {
+        src: "/assets/portfolio10.png",
+        title: "Orange Dental Braces",
+        subtitle: "10 -- Website",
+        alt: "Orange Dental Braces",
+    },
+];
