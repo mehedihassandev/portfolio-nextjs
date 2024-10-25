@@ -1,23 +1,5 @@
-import {
-    About,
-    Achievement,
-    CaseStudy,
-    Hero,
-    Portfolio,
-    Skills,
-    Slider,
-} from "@app/(pages)/_home";
+import HomePage from "@app/(pages)/_home/page";
 
 export default function Home() {
-    return (
-        <>
-            <Hero />
-            <Achievement />
-            <Skills />
-            <About />
-            <Slider />
-            <CaseStudy />
-            <Portfolio />
-        </>
-    );
+    return <HomePage />;
 }

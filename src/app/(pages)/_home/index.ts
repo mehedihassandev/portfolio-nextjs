@@ -5,3 +5,4 @@ export * from "@app/(pages)/_home/hero";
 export * from "@app/(pages)/_home/portfolio";
 export * from "@app/(pages)/_home/skills";
 export * from "@app/(pages)/_home/slider";
+export * from "@app/(pages)/_home/page";
