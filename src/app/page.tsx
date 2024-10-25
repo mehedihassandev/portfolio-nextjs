@@ -1,3 +1,9 @@
+import Hero from "./(pages)/_home/hero";
+
 export default function Home() {
-    return <h1 className="text-red-500">home</h1>;
+    return (
+        <>
+            <Hero />
+        </>
+    );
 }

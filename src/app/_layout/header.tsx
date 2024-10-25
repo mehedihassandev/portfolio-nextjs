@@ -22,7 +22,7 @@ export const Header = () => {
     }, [pathname]);
 
     return (
-        <header className="bg-white fixed top-0 left-0 w-full z-50 py-4">
+        <header className="bg-white fixed top-0 left-0 w-full z-50 py-2">
             <nav className="nav flex flex-wrap items-center max-w-screen-2xl justify-between m-auto px-5 lg:px-14">
                 <div className="p-4 flex justify-between">
                     <Image
