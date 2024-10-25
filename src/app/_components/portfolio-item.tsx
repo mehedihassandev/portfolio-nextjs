@@ -36,7 +36,7 @@ export const PortfolioItem: FC<IPortfolioItemProps> = ({
                 <p className="text-lg font-inter text-text_color">
                     {item.description}
                 </p>
-                <a href="#" className="pt-10">
+                <a href="#" className="pt-10" target="_blank">
                     <Image
                         src="/assets/send.png"
                         alt="arrow"
