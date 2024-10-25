@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { contactInfo } from "@app/_constant";
 
 export const Footer = () => {
     return (
@@ -21,120 +22,27 @@ export const Footer = () => {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-2 mb-10">
-                    <div className="h-full pt-12 flex flex-col gap-1 lg:gap-6">
-                        <div className="flex pb-8">
-                            <div className="flex h-[50px] w-[50px] items-center justify-center bg-[#0DB760] text-black rounded-md">
-                                <Image
-                                    src="/assets/phone.png"
-                                    alt="location"
-                                    width={25}
-                                    height={25}
-                                />
-                            </div>
-                            <div className="ml-4 mb-4">
-                                <h3 className="mb-2 text-lg font-medium leading-6 text-black">
-                                    Contact me
-                                </h3>
-                                <p className="text-gray-600 dark:text-slate-400">
-                                    +8801771924612
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="flex pb-8">
-                            <div className="flex h-[50px] w-[50px] items-center justify-center bg-[#0DB760] text-black rounded-md">
-                                <Image
-                                    src="/assets/mail.png"
-                                    alt="mail"
-                                    width={25}
-                                    height={25}
-                                />
-                            </div>
-                            <div className="ml-4 mb-4">
-                                <h3 className="mb-2 text-lg font-medium leading-6 text-black">
-                                    Email me
-                                </h3>
-                                <p className="text-gray-600 dark:text-slate-400">
-                                    hellochanchol@gmail.com
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="flex">
-                            <div className="flex h-[50px] w-[50px] items-center justify-center bg-[#0DB760] text-black rounded-md">
-                                <Image
-                                    src="/assets/location.png"
-                                    alt="mail"
-                                    width={25}
-                                    height={25}
-                                />
-                            </div>
-                            <div className="ml-4 mb-4">
-                                <h3 className="mb-2 text-lg font-medium leading-6 text-black">
-                                    Address
-                                </h3>
-                                <p className="text-gray-600 dark:text-slate-400">
-                                    Mirpur, Dhaka, Bangladesh.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="card h-fit mt-5" id="form">
-                        <form id="contactForm">
-                            <div>
-                                <div className="flex gap-5 mb-5">
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        placeholder="Full Name"
-                                        className="mb-2 w-full rounded-md border border-[#BEC0BF] py-3 pl-4 shadow-md"
-                                        name="name"
-                                    />
-                                    <input
-                                        type="text"
-                                        id="email"
-                                        placeholder="Your email"
-                                        className="mb-2 w-full rounded-md border border-[#BEC0BF] py-3 pl-4 shadow-md"
-                                        name="name"
+                    <div className="h-full pt-12 flex flex-col gap-1 lg:gap-2">
+                        {contactInfo.map((info) => (
+                            <div className="flex pb-8" key={info.id}>
+                                <div className="flex h-[50px] w-[50px] items-center justify-center bg-[#0DB760] text-black rounded-md">
+                                    <Image
+                                        src={info.icon}
+                                        alt={info.alt}
+                                        width={25}
+                                        height={25}
                                     />
                                 </div>
-                                <div className="flex gap-5 mb-5">
-                                    <input
-                                        type="text"
-                                        id="phoneNumber"
-                                        placeholder="Phone Number"
-                                        className="mb-2 w-full rounded-md border border-[#BEC0BF] py-3 pl-4 shadow-md"
-                                        name="name"
-                                    />
-                                    <input
-                                        type="text"
-                                        id="budget"
-                                        placeholder="Budget"
-                                        className="mb-2 w-full rounded-md border border-[#BEC0BF] py-3 pl-4 shadow-md"
-                                        name="name"
-                                    />
+                                <div className="ml-4 mb-4">
+                                    <h3 className="mb-2 text-lg font-medium leading-6 text-black">
+                                        {info.title}
+                                    </h3>
+                                    <p className="text-gray-600 dark:text-slate-400">
+                                        {info.description}
+                                    </p>
                                 </div>
                             </div>
-                            <div className="mx-0 mb-1 sm:mb-4">
-                                <textarea
-                                    id="textarea"
-                                    name="textarea"
-                                    cols={30}
-                                    rows={5}
-                                    placeholder="Write your message..."
-                                    className="mb-2 w-full rounded-md border border-[#BEC0BF] py-3 pl-4 shadow-md"
-                                ></textarea>
-                            </div>
-                            <div className="text-right">
-                                <button
-                                    type="submit"
-                                    className="w-60 bg-[#0DB760] text-white px-6 py-3 font-xl rounded-md sm:mb-0"
-                                >
-                                    Send Message
-                                </button>
-                            </div>
-                        </form>
+                        ))}
                     </div>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 border-solid border-t border-t-black py-4 items-center justify-between px-5">

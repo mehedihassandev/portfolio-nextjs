@@ -1,5 +1,5 @@
-import { portfolioItems } from "@/app/_constant/portfolio-constant";
 import { PortfolioItem } from "@/app/_components/portfolio-item";
+import { portfolioItems } from "@/app/_constant";
 import Image from "next/image";
 
 export const Portfolio = () => {

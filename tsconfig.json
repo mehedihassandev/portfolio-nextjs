@@ -22,7 +22,7 @@
             "@/*": ["./src/*"],
             "@app/*": ["./src/app/*"],
             "@components/*": ["./src/app/_components/*"],
-            "@constants/*": ["./src/app/constants/*"],
+            "@constants/*": ["./src/app/_constants/*"],
             "@models/*": ["./src/app/_models/*"]
         }
     },

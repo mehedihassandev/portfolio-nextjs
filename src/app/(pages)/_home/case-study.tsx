@@ -1,4 +1,4 @@
-import { caseStudies } from "@/app/_constant/case-study-constant";
+import { caseStudies } from "@/app/_constant";
 import Image from "next/image";
 
 export const CaseStudy = () => {

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
-import { IItem } from "../_models/item";
+import { IItem } from "@app/_models";
 
 interface IPortfolioItemProps {
     item: IItem;

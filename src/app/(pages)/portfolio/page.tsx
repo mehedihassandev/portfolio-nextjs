@@ -1,4 +1,4 @@
-import { portfolioPageItems } from "@/app/_constant/portfolio-constant";
+import { portfolioPageItems } from "@/app/_constant";
 import Image from "next/image";
 import React from "react";
 
