@@ -1,4 +1,4 @@
-import { PortfolioItem } from "@/app/_components/portfolio-item";
+import { PortfolioItem } from "@/app/_components";
 import { portfolioItems } from "@/app/_constant";
 import Image from "next/image";
 

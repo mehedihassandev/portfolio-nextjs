@@ -4,7 +4,7 @@ import Image from "next/image";
 import { contactInfo, FromDefaultValues } from "@app/_constant";
 import { useState, useEffect } from "react";
 import { contactFormSchema, ContactFormSchema } from "../_schemas";
-import { ErrorMessage } from "../_components/error-message";
+import { ErrorMessage } from "@app/_components";
 
 export const Footer = () => {
     const [formData, setFormData] = useState<ContactFormSchema>(FromDefaultValues);
