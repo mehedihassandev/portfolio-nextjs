@@ -1,5 +1,6 @@
-import { caseStudies } from "@/app/_constant";
+import { images } from "@/app/_constant";
 import Image from "next/image";
+import Link from "next/link";
 
 export const CaseStudy = () => {
     return (
@@ -13,48 +14,42 @@ export const CaseStudy = () => {
             />
 
             <div className="px-5 lg:px-24 mx-auto max-w-screen-2xl">
-                <h3 className="text-[40px] text-black font-bold leading-[66px]">
-                    My <span className="text-primary">Case Studies</span>
-                </h3>
+                <div className="flex flex-col justify-center text-center mb-5">
+                    <h5 className="text-base text-primary">Portfolio</h5>
+                    <h3 className="text-[40px] text-primary font-bold leading-[66px]">
+                        My <span className="text-black"> Case </span>Studies
+                    </h3>
+                </div>
 
-                {caseStudies.map((caseStudy, index) => (
-                    <div
-                        key={index}
-                        className="relative flex bg-clip-border rounded-xl bg-case_study text-gray-700 shadow-lg w-full flex-row mt-10"
-                    >
-                        <div className="py-10 w-full px-16">
-                            <h6 className="block leading-[32px] text-gray-700 text-[16px] pb-1">
-                                UX Case Study
-                            </h6>
-                            <h4 className="block mb-2 text-2xl antialiased font-bold leading-snug tracking-normal text-[#2F2A4B]">
-                                {caseStudy.title}
-                            </h4>
-                            <p className="block mb-8 text-base antialiased leading-[30px] text-[#2F2A4B]">
-                                {caseStudy.description}
-                            </p>
-                            <a
-                                href={caseStudy.link}
-                                className="flex items-center gap-4 py-3 text-sm font-bold text-center uppercase transition-all rounded-lg text-primary"
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-14">
+                    {images.map((image, index) => {
+                        const isExternal = image.link.startsWith("http");
+                        return (
+                            <div
+                                key={index}
+                                className="transition-transform duration-300 ease-in-out hover:-translate-y-4"
                             >
-                                Click to Visit{" "}
-                                <Image
-                                    alt="arrow"
-                                    width={20}
-                                    height={20}
-                                    src="/assets/arrow-right.png"
-                                />
-                            </a>
-                        </div>
-
-                        <div className="relative w-2/5">
-                            <img
-                                src={caseStudy.imageUrl}
-                                alt="card-image"
-                                className="object-cover w-full h-full rounded-r-xl"
-                            />
-                        </div>
-                    </div>
-                ))}
+                                <Link
+                                    href={image.link}
+                                    target={isExternal ? "_blank" : "_self"}
+                                    rel={
+                                        isExternal
+                                            ? "noopener noreferrer"
+                                            : undefined
+                                    }
+                                >
+                                    <Image
+                                        src={image.src}
+                                        alt={image.alt}
+                                        width={300}
+                                        height={300}
+                                        className="w-full h-auto rounded-md cursor-pointer"
+                                    />
+                                </Link>
+                            </div>
+                        );
+                    })}
+                </div>
             </div>
         </section>
     );

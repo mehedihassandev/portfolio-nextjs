@@ -2,7 +2,7 @@ import { PortfolioItem } from "@/app/_components";
 import { portfolioItems } from "@/app/_constant";
 import Image from "next/image";
 
-export const Portfolio = () => {
+export const Project = () => {
     return (
         <section id="portfolio">
             <Image
@@ -47,4 +47,4 @@ export const Portfolio = () => {
     );
 };
 
-export default Portfolio;
+export default Project;
