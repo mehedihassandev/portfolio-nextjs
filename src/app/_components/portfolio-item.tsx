@@ -38,7 +38,7 @@ export const PortfolioItem: FC<IPortfolioItemProps> = ({
                 </p>
                 <a href="#" className="pt-10" target="_blank">
                     <Image
-                        src="/assets/send.png"
+                        src="/assets/project/send.png"
                         alt="arrow"
                         width={64}
                         height={64}

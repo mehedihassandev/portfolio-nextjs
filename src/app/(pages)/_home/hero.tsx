@@ -8,7 +8,7 @@ export const Hero = () => {
                 id="about"
             >
                 <Image
-                    src="/assets/hello.png"
+                    src="/assets/hero/hello.png"
                     alt="ellipse"
                     width={515}
                     height={244}
@@ -45,7 +45,7 @@ export const Hero = () => {
                         </div>
                     </div>
                     <Image
-                        src="/assets/abouat.png"
+                        src="/assets/hero/about.png"
                         alt="about"
                         layout="responsive"
                         width={515}

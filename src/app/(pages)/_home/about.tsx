@@ -4,7 +4,7 @@ export const About = () => {
     return (
         <section>
             <Image
-                src="/assets/square-shape.png"
+                src="/assets/shap/square-shape.png"
                 alt="ellipse"
                 width={36}
                 height={132}
@@ -17,7 +17,7 @@ export const About = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
                     <div className="col-span-1 lg:row-span-2">
                         <Image
-                            src="/assets/abou2.png"
+                            src="/assets/about/about2.png"
                             alt="about"
                             width={371}
                             height={500}

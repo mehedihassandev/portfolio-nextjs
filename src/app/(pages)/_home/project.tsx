@@ -6,7 +6,7 @@ export const Project = () => {
     return (
         <section id="portfolio">
             <Image
-                src="/assets/square-shape.png"
+                src="/assets/shap/square-shape.png"
                 alt="ellipse"
                 width={36}
                 height={132}

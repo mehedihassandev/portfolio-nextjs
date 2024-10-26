@@ -6,7 +6,7 @@ export const PortfolioPage = () => {
     return (
         <>
             <Image
-                src="/assets/shape.png"
+                src="/assets/shap/shape.png"
                 alt="ellipse"
                 width={660}
                 height={860}
@@ -21,7 +21,7 @@ export const PortfolioPage = () => {
                     </h2>
                 </div>
                 <Image
-                    src="/assets/square-shape.png"
+                    src="/assets/shap/square-shape.png"
                     alt="ellipse"
                     width={36}
                     height={132}
