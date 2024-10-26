@@ -12,7 +12,7 @@ export const Project = () => {
                 height={132}
                 className="relative top-56 left-0 w-[36px] h-[132px] z-50"
             />
-            <div className="px-24 mx-auto max-w-screen-2xl">
+            <div className="px-5 lg:px-24 mx-auto max-w-screen-2xl">
                 <div className="flex flex-col justify-center text-center mb-5">
                     <h5 className="text-base text-primary">Latest Works</h5>
                     <h3 className="text-[40px] text-primary font-bold leading-[66px] pb-8">

@@ -11,7 +11,7 @@ export const About = () => {
                 className="relative top-56 left-0 w-[36px] h-[132px] z-50"
             />
             <div
-                className="px-24  mx-auto max-w-screen-2xl m-auto pt-20"
+                className="px-5 lg:px-24 mx-auto max-w-screen-2xl m-auto py-20"
                 id="skills"
             >
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">

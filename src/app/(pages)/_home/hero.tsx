@@ -16,7 +16,7 @@ export const Hero = () => {
                 />
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-24">
                     <div>
-                        <h1 className="text-4xl lg:text-6xl font-bold text-black pt-8 leading-[4.375rem]">
+                        <h1 className="text-4xl lg:text-6xl font-bold text-black pt-8 leading-[3rem] lg:leading-[4.375rem]">
                             I have
                             <span className="text-primary">
                                 Creative

@@ -26,7 +26,7 @@ export const Header = () => {
     return (
         <header className="bg-white fixed top-0 left-0 w-full z-50 py-2">
             <nav className="nav flex flex-wrap items-center max-w-screen-2xl justify-between m-auto px-5 lg:px-14">
-                <div className="p-4 flex justify-between w-full">
+                <div className="py-4 flex justify-between w-full">
                     <Image
                         src="/assets/logo.png"
                         alt="Logo"
@@ -71,7 +71,7 @@ export const Header = () => {
                     isMenuOpen ? "translate-x-0" : "-translate-x-full"
                 } transition-transform duration-300 ease-in-out z-50 px-5`}
             >
-                <div className="p-4 flex justify-between mt-2">
+                <div className="py-4 flex justify-between mt-2">
                     <Image
                         src="/assets/logo.png"
                         alt="Logo"
@@ -85,7 +85,7 @@ export const Header = () => {
                 </div>
                 <ul className="mt-4">
                     {menus.map((menu, index) => (
-                        <li key={index} className="px-4 py-2">
+                        <li key={index} className="px-2 py-2">
                             <Link
                                 href={menu.linkUrl}
                                 className={`block px-4 py-2 hover:text-primary transition-all duration-300 ease-in-out ${
