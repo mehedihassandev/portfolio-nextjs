@@ -4,6 +4,8 @@ import Image from "next/image";
 import { menus } from "../_navigation/menus";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { CiMenuFries } from "react-icons/ci";
+import { IoIosClose } from "react-icons/io";
 
 export const Header = () => {
     const pathname = usePathname();
@@ -24,19 +26,20 @@ export const Header = () => {
     return (
         <header className="bg-white fixed top-0 left-0 w-full z-50 py-2">
             <nav className="nav flex flex-wrap items-center max-w-screen-2xl justify-between m-auto px-5 lg:px-14">
-                <div className="p-4 flex justify-between">
+                <div className="p-4 flex justify-between w-full">
                     <Image
                         src="/assets/logo.png"
                         alt="Logo"
                         width={150}
                         height={50}
+                        className="w-[140px] h-[30px] lg:w-[230px] lg:h-[50px]"
                     />
 
                     <button
-                        className="mt-4 text-gray-800 block md:hidden"
+                        className="text-gray-800 block md:hidden"
                         onClick={handleMenuClick}
                     >
-                        Open
+                        <CiMenuFries size={24} />
                     </button>
                 </div>
 
@@ -64,19 +67,20 @@ export const Header = () => {
 
             {/* Mobile Menu */}
             <div
-                className={`fixed top-0 left-0 h-full w-[400px] bg-white shadow-lg transform ${
+                className={`fixed top-0 left-0 h-full w-full bg-white shadow-lg transform ${
                     isMenuOpen ? "translate-x-0" : "-translate-x-full"
-                } transition-transform duration-300 ease-in-out z-50`}
+                } transition-transform duration-300 ease-in-out z-50 px-5`}
             >
-                <div className="p-4 flex justify-between">
+                <div className="p-4 flex justify-between mt-2">
                     <Image
                         src="/assets/logo.png"
                         alt="Logo"
                         width={150}
                         height={50}
+                        className="w-[140px] h-[30px]"
                     />
                     <button className="text-gray-800" onClick={handleMenuClick}>
-                        Close
+                        <IoIosClose size={38} />
                     </button>
                 </div>
                 <ul className="mt-4">

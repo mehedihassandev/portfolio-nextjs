@@ -12,11 +12,11 @@ export const Hero = () => {
                     alt="ellipse"
                     width={515}
                     height={244}
-                    className="absolute top-[20%] left-[20%] z-20"
+                    className="absolute w-[515px] h-[244px] top-[20%] lg:left-[20%] z-20"
                 />
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-24">
                     <div>
-                        <h1 className="text-6xl font-bold text-black pt-8 leading-[4.375rem]">
+                        <h1 className="text-4xl lg:text-6xl font-bold text-black pt-8 leading-[4.375rem]">
                             I have
                             <span className="text-primary">
                                 Creative
@@ -60,7 +60,7 @@ export const Hero = () => {
                 alt="ellipse"
                 width={660}
                 height={860}
-                className="absolute top-[550px] lg:top-[75px] left-[80px] w-[660px] h-[800px] z-10"
+                className="absolute top-[550px] lg:top-[75px] left-[80px] w-[660px] h-[800px] z-10 hidden md:block"
             />
         </>
     );

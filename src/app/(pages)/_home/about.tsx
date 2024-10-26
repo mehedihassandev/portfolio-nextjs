@@ -55,7 +55,7 @@ export const About = () => {
                                 alt="ellipse"
                                 width={360}
                                 height={305}
-                                className="relative -top-52 left-20 w-[360px] h-[305px] z-20"
+                                className="relative -top-52 left-20 w-[100px] h-[100px] lg:w-[360px] lg:h-[305px] z-20"
                             />
                         </div>
                     </div>
