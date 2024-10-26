@@ -23,17 +23,17 @@ export const caseStudies = [
 
 export const images = [
     {
-        src: "/assets/case1.png",
+        src: "/assets/case-study/Daraz_App.png",
         alt: "case-study-1",
         link: LINKS.CASE_STUDY,
     },
     {
-        src: "/assets/case2.png",
+        src: "/assets/case-study/Timepiecex.png",
         alt: "case-study-2",
         link: "#",
     },
     {
-        src: "/assets/case3.png",
+        src: "/assets/case-study/MyCare.png",
         alt: "case-study-3",
         link: "#",
     },
