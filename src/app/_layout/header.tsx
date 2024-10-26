@@ -26,13 +26,13 @@ export const Header = () => {
     return (
         <header className="bg-white fixed top-0 left-0 w-full z-50 py-2">
             <nav className="nav flex flex-wrap items-center max-w-screen-2xl justify-between m-auto px-5 lg:px-14">
-                <div className="py-4 flex justify-between w-full">
+                <div className="py-3 md:py-2 flex justify-between w-full md:w-auto">
                     <Image
                         src="/assets/logo.png"
                         alt="Logo"
                         width={150}
                         height={50}
-                        className="w-[140px] h-[30px] lg:w-[230px] lg:h-[50px]"
+                        className="w-[160px] h-[35px] lg:w-[190px] lg:h-[40px]"
                     />
 
                     <button
@@ -77,7 +77,7 @@ export const Header = () => {
                         alt="Logo"
                         width={150}
                         height={50}
-                        className="w-[140px] h-[30px]"
+                        className="w-[160px] h-[35px]"
                     />
                     <button className="text-gray-800" onClick={handleMenuClick}>
                         <IoIosClose size={38} />
