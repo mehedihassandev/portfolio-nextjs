@@ -8,7 +8,7 @@ export const Skills = () => {
                 alt="ellipse"
                 width={132}
                 height={36}
-                className="relative top-64 right-0 w-[36px] h-[132px] z-50 ml-auto"
+                className="relative top-64 right-0 w-[36px] h-[132px] z-10 ml-auto"
             />
             <div
                 className="px-5 lg:px-24 mx-auto max-w-screen-2xl m-auto"

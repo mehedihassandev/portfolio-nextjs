@@ -10,7 +10,7 @@ export const CaseStudy = () => {
                 alt="ellipse"
                 width={36}
                 height={132}
-                className="relative top-64 right-0 w-[36px] h-[132px] z-50 ml-auto"
+                className="relative top-64 right-0 w-[36px] h-[132px] z-10 ml-auto"
             />
 
             <div className="px-5 lg:px-24 mx-auto max-w-screen-2xl">

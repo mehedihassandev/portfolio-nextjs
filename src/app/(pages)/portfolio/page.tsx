@@ -13,21 +13,21 @@ export const PortfolioPage = () => {
                 className="absolute top-[550px] lg:top-[280px] right-[80px] w-[660px] h-[860px] z-10"
             />
             <section id="portfolio">
-                <div className="mt-28 mb-20">
-                    <h2 className="text-[96px] text-black font-black text-center font-inter leading-[104px]">
-                        <span className="text-[#8D939547]">My Recent </span>{" "}
-                        Visual <br />
-                        Explorations
-                    </h2>
-                </div>
                 <Image
                     src="/assets/shap/square-shape.png"
                     alt="ellipse"
                     width={36}
                     height={132}
-                    className="absolute top-[50%] left-0 w-[36px] h-[132px] z-50"
+                    className="absolute top-[50%] left-0 w-[36px] h-[132px] z-10"
                 />
                 <div className="px-5 lg:px-24 mx-auto max-w-screen-2xl">
+                    <div className="mt-20 lg:mt-28 mb-7 lg:mb-20">
+                        <h2 className="text-4xl lg:text-[96px] text-black font-black text-center font-inter leading-[45px] lg:leading-[104px]">
+                            <span className="text-[#8D939547]">My Recent </span>{" "}
+                            Visual <br />
+                            Explorations
+                        </h2>
+                    </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-10">
                         {portfolioPageItems.map((item, index) => (
                             <div

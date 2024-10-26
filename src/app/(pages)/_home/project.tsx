@@ -10,7 +10,7 @@ export const Project = () => {
                 alt="ellipse"
                 width={36}
                 height={132}
-                className="relative top-56 left-0 w-[36px] h-[132px] z-50"
+                className="relative top-56 left-0 w-[36px] h-[132px] z-10"
             />
             <div className="px-5 lg:px-24 mx-auto max-w-screen-2xl">
                 <div className="flex flex-col justify-center text-center mb-5">
