@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Portfolio() {
     return (
-        <section>
+        <>
             <Image
                 src="/assets/shap/square-shape.png"
                 alt="ellipse"
@@ -51,6 +51,6 @@ export default function Portfolio() {
                     })}
                 </div>
             </div>
-        </section>
+        </>
     );
 }

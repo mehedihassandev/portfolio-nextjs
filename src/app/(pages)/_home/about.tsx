@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <section>
+        <>
             <Image
                 src="/assets/shap/square-shape.png"
                 alt="ellipse"
@@ -11,10 +11,10 @@ export default function About() {
                 className="relative top-56 left-0 w-[36px] h-[132px] z-10"
             />
             <div
-                className="px-5 lg:px-24 mx-auto max-w-screen-2xl m-auto py-20"
+                className="px-5 lg:px-24 mx-auto max-w-screen-2xl m-auto"
                 id="skills"
             >
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
                     <div className="col-span-1 lg:row-span-2">
                         <Image
                             src="/assets/about/about2.png"
@@ -61,6 +61,6 @@ export default function About() {
                     </div>
                 </div>
             </div>
-        </section>
+        </>
     );
 }

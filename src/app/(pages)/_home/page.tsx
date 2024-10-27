@@ -5,6 +5,7 @@ import Project from "./project";
 import Skills from "./skills";
 import Slider from "./slider";
 import About from "./about";
+import Review from "./review";
 
 export default function HomePage() {
     return (
@@ -16,6 +17,7 @@ export default function HomePage() {
             <Slider />
             <Portfolio />
             <Project />
+            <Review />
         </>
     );
 }
