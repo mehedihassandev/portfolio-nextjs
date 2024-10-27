@@ -1,6 +1,6 @@
 export * from "./about";
 export * from "./achievement";
-export * from "./case-study";
+export * from "./portfolio";
 export * from "./hero";
 export * from "./project";
 export * from "./skills";

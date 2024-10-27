@@ -56,7 +56,7 @@ export default function Hero() {
             </div>
 
             <Image
-                src="/assets/shape.png"
+                src="/assets/shap/shape.png"
                 alt="ellipse"
                 width={660}
                 height={860}

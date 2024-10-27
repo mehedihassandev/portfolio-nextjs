@@ -1,6 +1,6 @@
 import About from "../about/page";
 import Achievement from "./achievement";
-import CaseStudy from "./case-study";
+import Portfolio from "./portfolio";
 import Hero from "./hero";
 import Project from "./project";
 import Skills from "./skills";
@@ -14,7 +14,7 @@ export default function HomePage() {
             <Skills />
             <About />
             <Slider />
-            <CaseStudy />
+            <Portfolio />
             <Project />
         </>
     );

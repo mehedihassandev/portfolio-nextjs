@@ -28,7 +28,7 @@ export const Header = () => {
             <nav className="nav flex flex-wrap items-center max-w-screen-2xl justify-between m-auto px-5 lg:px-14">
                 <div className="py-3 md:py-2 flex justify-between w-full md:w-auto">
                     <Image
-                        src="/assets/logo.png"
+                        src="/assets/logo/logo.png"
                         alt="Logo"
                         width={150}
                         height={50}
@@ -73,7 +73,7 @@ export const Header = () => {
             >
                 <div className="py-4 flex justify-between mt-2">
                     <Image
-                        src="/assets/logo.png"
+                        src="/assets/logo/logo.png"
                         alt="Logo"
                         width={150}
                         height={50}
