@@ -2,15 +2,12 @@ import Image from "next/image";
 import { FC } from "react";
 import { IItem } from "@app/_models";
 
-interface IPortfolioItemProps {
+interface IProjectItemProps {
     item: IItem;
     isReversed: boolean;
 }
 
-export const PortfolioItem: FC<IPortfolioItemProps> = ({
-    item,
-    isReversed,
-}) => {
+export const ProjectItem: FC<IProjectItemProps> = ({ item, isReversed }) => {
     return (
         <div
             className={`flex flex-col md:flex-row ${
@@ -50,4 +47,4 @@ export const PortfolioItem: FC<IPortfolioItemProps> = ({
     );
 };
 
-export default PortfolioItem;
+export default ProjectItem;

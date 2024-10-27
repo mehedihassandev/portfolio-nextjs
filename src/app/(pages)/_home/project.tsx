@@ -1,5 +1,5 @@
-import { PortfolioItem } from "@/app/_components";
-import { portfolioItems } from "@/app/_constant";
+import { ProjectItem } from "@/app/_components";
+import { projectItems } from "@/app/_constant";
 import Image from "next/image";
 
 export const Project = () => {
@@ -34,8 +34,8 @@ export const Project = () => {
                     </a> */}
                 </div>
                 <div className="grid grid-cols-1 gap-5">
-                    {portfolioItems.map((item, index) => (
-                        <PortfolioItem
+                    {projectItems.map((item, index) => (
+                        <ProjectItem
                             key={index}
                             item={item}
                             isReversed={index % 2 !== 0}
