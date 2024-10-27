@@ -8,7 +8,7 @@ export const Skills = () => {
                 alt="ellipse"
                 width={132}
                 height={36}
-                className="relative top-64 right-0 w-[36px] h-[132px] z-50 ml-auto"
+                className="relative top-64 right-0 w-[36px] h-[132px] z-10 ml-auto"
             />
             <div
                 className="px-5 lg:px-24 mx-auto max-w-screen-2xl m-auto"
@@ -32,7 +32,7 @@ export const Skills = () => {
                     <div className="grid grid-cols-2 pt-32 gap-10">
                         <div className="p-6 bg-[#fafafa] rounded-md">
                             <Image
-                                src="/assets/diamond.png"
+                                src="/assets/skill/diamond.png"
                                 alt="diamond"
                                 width={28}
                                 height={28}
@@ -48,7 +48,7 @@ export const Skills = () => {
                         </div>
                         <div className="p-6 bg-[#fafafa] rounded-md relative top-28 left-0">
                             <Image
-                                src="/assets/pulse.png"
+                                src="/assets/skill/pulse.png"
                                 alt="diamond"
                                 width={28}
                                 height={28}
@@ -63,7 +63,7 @@ export const Skills = () => {
                         </div>
                         <div className="p-6 bg-[#fafafa] rounded-md">
                             <Image
-                                src="/assets/school.png"
+                                src="/assets/skill/school.png"
                                 alt="diamond"
                                 width={28}
                                 height={28}

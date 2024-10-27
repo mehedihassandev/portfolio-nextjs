@@ -4,20 +4,20 @@ export const About = () => {
     return (
         <section>
             <Image
-                src="/assets/square-shape.png"
+                src="/assets/shap/square-shape.png"
                 alt="ellipse"
                 width={36}
                 height={132}
-                className="relative top-56 left-0 w-[36px] h-[132px] z-50"
+                className="relative top-56 left-0 w-[36px] h-[132px] z-10"
             />
             <div
-                className="px-24  mx-auto max-w-screen-2xl m-auto pt-20"
+                className="px-5 lg:px-24 mx-auto max-w-screen-2xl m-auto py-20"
                 id="skills"
             >
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
                     <div className="col-span-1 lg:row-span-2">
                         <Image
-                            src="/assets/abou2.png"
+                            src="/assets/about/about2.png"
                             alt="about"
                             width={371}
                             height={500}
@@ -55,7 +55,7 @@ export const About = () => {
                                 alt="ellipse"
                                 width={360}
                                 height={305}
-                                className="relative -top-52 left-20 w-[360px] h-[305px] z-20"
+                                className="relative -top-52 left-20 w-[100px] h-[100px] lg:w-[360px] lg:h-[305px] z-20"
                             />
                         </div>
                     </div>

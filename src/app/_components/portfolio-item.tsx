@@ -1,16 +1,13 @@
 import Image from "next/image";
 import { FC } from "react";
-import { IItem } from "../models/item";
+import { IItem } from "@app/_models";
 
-interface IPortfolioItemProps {
+interface IProjectItemProps {
     item: IItem;
     isReversed: boolean;
 }
 
-export const PortfolioItem: FC<IPortfolioItemProps> = ({
-    item,
-    isReversed,
-}) => {
+export const ProjectItem: FC<IProjectItemProps> = ({ item, isReversed }) => {
     return (
         <div
             className={`flex flex-col md:flex-row ${
@@ -36,9 +33,9 @@ export const PortfolioItem: FC<IPortfolioItemProps> = ({
                 <p className="text-lg font-inter text-text_color">
                     {item.description}
                 </p>
-                <a href="#" className="pt-10">
+                <a href="#" className="pt-10" target="_blank">
                     <Image
-                        src="/assets/send.png"
+                        src="/assets/project/send.png"
                         alt="arrow"
                         width={64}
                         height={64}
@@ -50,4 +47,4 @@ export const PortfolioItem: FC<IPortfolioItemProps> = ({
     );
 };
 
-export default PortfolioItem;
+export default ProjectItem;

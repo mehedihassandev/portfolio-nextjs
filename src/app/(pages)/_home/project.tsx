@@ -1,18 +1,18 @@
-import { portfolioItems } from "@/app/_constant/portfolio-constant";
-import { PortfolioItem } from "@/app/components/portfolio-item";
+import { ProjectItem } from "@/app/_components";
+import { projectItems } from "@/app/_constant";
 import Image from "next/image";
 
-export const Portfolio = () => {
+export const Project = () => {
     return (
         <section id="portfolio">
             <Image
-                src="/assets/square-shape.png"
+                src="/assets/shap/square-shape.png"
                 alt="ellipse"
                 width={36}
                 height={132}
-                className="relative top-56 left-0 w-[36px] h-[132px] z-50"
+                className="relative top-56 left-0 w-[36px] h-[132px] z-10"
             />
-            <div className="px-24 mx-auto max-w-screen-2xl">
+            <div className="px-5 lg:px-24 mx-auto max-w-screen-2xl">
                 <div className="flex flex-col justify-center text-center mb-5">
                     <h5 className="text-base text-primary">Latest Works</h5>
                     <h3 className="text-[40px] text-primary font-bold leading-[66px] pb-8">
@@ -34,8 +34,8 @@ export const Portfolio = () => {
                     </a> */}
                 </div>
                 <div className="grid grid-cols-1 gap-5">
-                    {portfolioItems.map((item, index) => (
-                        <PortfolioItem
+                    {projectItems.map((item, index) => (
+                        <ProjectItem
                             key={index}
                             item={item}
                             isReversed={index % 2 !== 0}
@@ -47,4 +47,4 @@ export const Portfolio = () => {
     );
 };
 
-export default Portfolio;
+export default Project;
