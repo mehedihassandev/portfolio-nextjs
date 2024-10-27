@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const Hero = () => {
+export default function Hero() {
     return (
         <>
             <div
@@ -56,7 +56,7 @@ export const Hero = () => {
             </div>
 
             <Image
-                src="/assets/shape.png"
+                src="/assets/shap/shape.png"
                 alt="ellipse"
                 width={660}
                 height={860}
@@ -64,6 +64,4 @@ export const Hero = () => {
             />
         </>
     );
-};
-
-export default Hero;
+}

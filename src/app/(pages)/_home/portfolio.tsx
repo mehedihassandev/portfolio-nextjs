@@ -2,11 +2,11 @@ import { images } from "@/app/_constant";
 import Image from "next/image";
 import Link from "next/link";
 
-export const CaseStudy = () => {
+export default function Portfolio() {
     return (
         <section>
             <Image
-                src="/assets/square-shape.png"
+                src="/assets/shap/square-shape.png"
                 alt="ellipse"
                 width={36}
                 height={132}
@@ -53,6 +53,4 @@ export const CaseStudy = () => {
             </div>
         </section>
     );
-};
-
-export default CaseStudy;
+}

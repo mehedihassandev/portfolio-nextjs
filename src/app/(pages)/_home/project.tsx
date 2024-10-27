@@ -2,7 +2,7 @@ import { ProjectItem } from "@/app/_components";
 import { projectItems } from "@/app/_constant";
 import Image from "next/image";
 
-export const Project = () => {
+export default function Project() {
     return (
         <section id="portfolio">
             <Image
@@ -45,6 +45,4 @@ export const Project = () => {
             </div>
         </section>
     );
-};
-
-export default Project;
+}

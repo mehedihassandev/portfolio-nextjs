@@ -2,7 +2,7 @@ import { portfolioPageItems } from "@/app/_constant";
 import Image from "next/image";
 import React from "react";
 
-export const PortfolioPage = () => {
+export default function PortfolioPage() {
     return (
         <>
             <Image
@@ -62,6 +62,4 @@ export const PortfolioPage = () => {
             </section>
         </>
     );
-};
-
-export default PortfolioPage;
+}

@@ -1,4 +1,4 @@
-export const Slider = () => {
+export default function Slider() {
     return (
         <section className="w-full overflow-hidden whitespace-nowrap bg-green-500 py-4">
             <div className="marquee flex items-center space-x-8 text-white text-lg font-semibold">
@@ -22,6 +22,4 @@ export const Slider = () => {
             </div>
         </section>
     );
-};
-
-export default Slider;
+}

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const About = () => {
+export default function About() {
     return (
         <section>
             <Image
@@ -51,7 +51,7 @@ export const About = () => {
                         </p>
                         <div className="absolute">
                             <Image
-                                src="/assets/spchanchol.png"
+                                src="/assets/about/spchanchol.png"
                                 alt="ellipse"
                                 width={360}
                                 height={305}
@@ -63,6 +63,4 @@ export const About = () => {
             </div>
         </section>
     );
-};
-
-export default About;
+}

@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-export const Skills = () => {
+export default function Skills() {
     return (
         <section>
             <Image
-                src="/assets/square-shape.png"
+                src="/assets/shap/square-shape.png"
                 alt="ellipse"
                 width={132}
                 height={36}
@@ -81,6 +81,4 @@ export const Skills = () => {
             </div>
         </section>
     );
-};
-
-export default Skills;
+}
