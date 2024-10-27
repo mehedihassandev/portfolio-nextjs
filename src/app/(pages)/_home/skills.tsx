@@ -4,7 +4,7 @@ export default function Skills() {
     return (
         <section>
             <Image
-                src="/assets/square-shape.png"
+                src="/assets/shap/square-shape.png"
                 alt="ellipse"
                 width={132}
                 height={36}

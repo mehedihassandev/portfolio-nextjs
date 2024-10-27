@@ -51,7 +51,7 @@ export default function About() {
                         </p>
                         <div className="absolute">
                             <Image
-                                src="/assets/spchanchol.png"
+                                src="/assets/about/spchanchol.png"
                                 alt="ellipse"
                                 width={360}
                                 height={305}
