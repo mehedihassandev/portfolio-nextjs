@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Skills() {
     return (
-        <section>
+        <>
             <Image
                 src="/assets/shap/square-shape.png"
                 alt="ellipse"
@@ -15,7 +15,7 @@ export default function Skills() {
                 id="skills"
             >
                 <div className="grid grid-cols-1 lg:grid-cols-2">
-                    <div className="pt-44">
+                    <div className="mt-10">
                         <h2 className="text-[40px] font-bold text-black leading-[54px]">
                             Why Hire Me For Your <br />
                             Next <span className="text-primary">Project?</span>
@@ -29,7 +29,7 @@ export default function Skills() {
                             Hire Me
                         </a>
                     </div>
-                    <div className="grid grid-cols-2 pt-32 gap-10">
+                    <div className="grid grid-cols-2 gap-10">
                         <div className="p-6 bg-[#fafafa] rounded-md">
                             <Image
                                 src="/assets/skill/diamond.png"
@@ -79,6 +79,6 @@ export default function Skills() {
                     </div>
                 </div>
             </div>
-        </section>
+        </>
     );
 }

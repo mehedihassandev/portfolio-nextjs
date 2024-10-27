@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Project() {
     return (
-        <section id="portfolio">
+        <>
             <Image
                 src="/assets/shap/square-shape.png"
                 alt="ellipse"
@@ -43,6 +43,6 @@ export default function Project() {
                     ))}
                 </div>
             </div>
-        </section>
+        </>
     );
 }
