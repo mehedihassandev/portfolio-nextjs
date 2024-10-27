@@ -2,7 +2,7 @@ import { images } from "@/app/_constant";
 import Image from "next/image";
 import Link from "next/link";
 
-export const CaseStudy = () => {
+export default function CaseStudy() {
     return (
         <section>
             <Image
@@ -53,6 +53,4 @@ export const CaseStudy = () => {
             </div>
         </section>
     );
-};
-
-export default CaseStudy;
+}

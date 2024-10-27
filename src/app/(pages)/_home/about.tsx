@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const About = () => {
+export default function AboutPage() {
     return (
         <section>
             <Image
@@ -63,6 +63,4 @@ export const About = () => {
             </div>
         </section>
     );
-};
-
-export default About;
+}

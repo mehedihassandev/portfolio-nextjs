@@ -1,4 +1,4 @@
-export const Achievement = () => {
+export default function Achievement() {
     return (
         <div
             className="px-5 lg:px-24 mx-auto max-w-screen-2xl m-auto"
@@ -32,6 +32,4 @@ export const Achievement = () => {
             </div>
         </div>
     );
-};
-
-export default Achievement;
+}

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const Skills = () => {
+export default function Skills() {
     return (
         <section>
             <Image
@@ -81,6 +81,4 @@ export const Skills = () => {
             </div>
         </section>
     );
-};
-
-export default Skills;
+}
