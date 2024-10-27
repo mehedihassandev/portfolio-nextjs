@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function AboutPage() {
+export default function About() {
     return (
         <section>
             <Image
