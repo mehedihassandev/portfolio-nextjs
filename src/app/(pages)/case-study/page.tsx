@@ -63,7 +63,7 @@ export default function CaseStudy() {
     return (
         <section className="mt-24">
             <div className="px-5 lg:px-24 mx-auto max-w-screen-2xl">
-                <div className="flex-col lg:flex items-center justify-between gap-3">
+                <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
                     <div className="flex flex-col overflow-hidden mb-2">
                         <h2 className="text-lg md:text-2xl text-gray">
                             Project
@@ -118,7 +118,7 @@ export default function CaseStudy() {
                     </div>
 
                     <div className="pt-10">
-                        <div className="flex-col md:flex gap-5">
+                        <div className="flex flex-col lg:flex-row gap-5">
                             <h2 className="text-3xl text-white w-full md:w-1/5 mb-5 md:mb-0">
                                 About Project
                             </h2>
@@ -150,7 +150,7 @@ export default function CaseStudy() {
                         className={`pt-10 ${index === 0 ? "pt-0" : ""}`}
                         key={index}
                     >
-                        <div className="flex-col md:flex gap-5 items-center">
+                        <div className="flex flex-col lg:flex-row gap-5 items-center">
                             <h2 className="text-xl font-semibold text-[#071518] w-full md:w-1/5">
                                 {section.title}
                             </h2>
@@ -167,7 +167,7 @@ export default function CaseStudy() {
                 alt="MyCare"
                 width={1920}
                 height={1080}
-                className="w-full h-auto md:h-[1280px] md:mt-10"
+                className="w-full h-auto md:h-[1280px]"
             />
 
             <div className="bg-[#071518] mt-14 py-20">
@@ -179,7 +179,7 @@ export default function CaseStudy() {
                         </span>
                     </h1>
 
-                    <div className="mt-16 lg:mt-28 grid grid-cols-1 lg:grid-cols-3 gap-10 justify-between">
+                    <div className="mt-16 lg:mt-40 grid grid-cols-1 lg:grid-cols-3 gap-10 justify-between">
                         {steps.map((step, index) => (
                             <div className="flex flex-col gap-3" key={index}>
                                 <div className="flex w-[30px] h-[30px] bg-primary rounded-full items-center align-middle justify-center mb-3">
@@ -200,8 +200,8 @@ export default function CaseStudy() {
             </div>
 
             <div className="px-5 lg:px-24 mx-auto max-w-screen-2xl py-10">
-                <div className="pt-0 md:pt-10">
-                    <div className="flex-col md:flex gap-5 items-center">
+                <div>
+                    <div className="flex flex-col lg:flex-row gap-5 items-center">
                         <h2 className="text-xl font-semibold text-[#071518] w-full md:w-1/5 mb-3 md:mb-0">
                             Visual Output
                         </h2>
@@ -214,7 +214,7 @@ export default function CaseStudy() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-5 md:gap-10 mt-10 md:mt-20">
+                <div className="grid grid-cols-2 gap-5 md:gap-10 mt-10">
                     <Image
                         src="/assets/case-study/pages/Phone Display.png"
                         alt="MyCare"
@@ -242,26 +242,23 @@ export default function CaseStudy() {
             </div>
 
             <div className="px-5 lg:px-24 mx-auto max-w-screen-2xl md:pb-10">
-                <div className="md:pt-10">
-                    <div className="flex-col md:flex gap-5 items-center">
-                        <h2 className="text-xl font-semibold text-[#071518] w-full md:w-1/5 mb-3 md:mb-0">
-                            Conclusion
-                        </h2>
-                        <p className="text-base leading-[32px] text-[#323232] w-full md:w-4/5">
-                            <span className="text-primary">MyCare App</span>{" "}
-                            offers a seamless and efficient platform for
-                            managing everyday financial transactions. By
-                            integrating features such as Top-up, Paybill, and
-                            Shop, it provides users with a versatile and
-                            convenient tool for handling various payment needs.
-                            The app’s user-friendly interface ensures that even
-                            those with minimal technical knowledge can navigate
-                            and utilize its services effectively. As digital
-                            transactions become increasingly prevalent, the
-                            Online Wallet App stands out as a reliable and
-                            secure solution for modern financial management.
-                        </p>
-                    </div>
+                <div className="flex flex-col lg:flex-row gap-5 items-center">
+                    <h2 className="text-xl font-semibold text-[#071518] w-full md:w-1/5 mb-3 md:mb-0">
+                        Conclusion
+                    </h2>
+                    <p className="text-base leading-[32px] text-[#323232] w-full md:w-4/5">
+                        <span className="text-primary">MyCare App</span> offers
+                        a seamless and efficient platform for managing everyday
+                        financial transactions. By integrating features such as
+                        Top-up, Paybill, and Shop, it provides users with a
+                        versatile and convenient tool for handling various
+                        payment needs. The app’s user-friendly interface ensures
+                        that even those with minimal technical knowledge can
+                        navigate and utilize its services effectively. As
+                        digital transactions become increasingly prevalent, the
+                        Online Wallet App stands out as a reliable and secure
+                        solution for modern financial management.
+                    </p>
                 </div>
             </div>
         </section>
