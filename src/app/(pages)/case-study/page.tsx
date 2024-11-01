@@ -1,4 +1,13 @@
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+    title: "Case Study",
+    description: "Developed by MD. Mehedi Hassan",
+    alternates: {
+        canonical: "https://www.mehedihassan.me",
+    },
+};
 
 export default function CaseStudy() {
     const sections = [

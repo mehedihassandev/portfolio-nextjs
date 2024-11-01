@@ -1,6 +1,15 @@
 import { portfolioPageItems } from "@/app/_constant";
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
+
+export const metadata: Metadata = {
+    title: "Portfolio",
+    description: "Developed by MD. Mehedi Hassan",
+    alternates: {
+        canonical: "https://www.mehedihassan.me",
+    },
+};
 
 export default function PortfolioPage() {
     return (
