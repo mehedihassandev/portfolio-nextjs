@@ -23,6 +23,7 @@ export default function CaseStudy() {
                     />
                 </div>
             </div>
+
             <div className="py-20 bg-[#071518] mt-5">
                 <div className="px-5 lg:px-24 mx-auto max-w-screen-2xl">
                     <div className="grid grid-cols-5 justify-around align-middle pb-10 border-b border-gray">
@@ -132,7 +133,106 @@ export default function CaseStudy() {
                 height={1080}
                 className="w-full h-[1280px]"
             />
+            <div className="bg-[#071518] mt-14 py-20">
+                <div className="px-5 lg:px-24 mx-auto max-w-screen-2xl">
+                    <h1 className="text-[120px] font-bold text-white">
+                        Design{" "}
+                        <span className="relative top-24 text-[#8D9395]">
+                            Process
+                        </span>
+                    </h1>
+
+                    <div className="mt-28 grid grid-cols-3 gap-10 justify-between">
+                        <div className="flex flex-col gap-3">
+                            <div className=" flex w-[30px] h-[30px] bg-primary rounded-full items-center align-middle justify-center mb-3">
+                                <h4 className="text-white text-sm">1</h4>
+                            </div>
+                            <h2 className="text-2xl font-semibold text-white">
+                                Research
+                            </h2>
+                            <p className="text-base leading-[26px] text-[#8D9395]">
+                                In the research phase, we comprehensively study
+                                user needs, behaviors, and pain points through
+                                methods like interviews and data analysis to
+                                inform the design process effectively.
+                            </p>
+                        </div>
+                        <div className="flex flex-col gap-3">
+                            <div className=" flex w-[30px] h-[30px] bg-primary rounded-full items-center align-middle justify-center mb-3">
+                                <h4 className="text-white text-sm">1</h4>
+                            </div>
+                            <h2 className="text-2xl font-semibold text-white">
+                                Design
+                            </h2>
+                            <p className="text-base leading-[26px] text-[#8D9395]">
+                                During the design phase, we create wireframes
+                                and prototypes, visually conceptualizing
+                                solutions. These serve as blueprints for the
+                                user interfaces structure, layout, and
+                                functionality.
+                            </p>
+                        </div>
+                        <div className="flex flex-col gap-3">
+                            <div className=" flex w-[30px] h-[30px] bg-primary rounded-full items-center align-middle justify-center mb-3">
+                                <h4 className="text-white text-sm">1</h4>
+                            </div>
+                            <h2 className="text-2xl font-semibold text-white">
+                                Testing
+                            </h2>
+                            <p className="text-base leading-[26px] text-[#8D9395]">
+                                In the testing phase, we gather user feedback on
+                                prototypes, assess usability, and refine
+                                designs. This iterative process ensures the
+                                final product meets user expectations and needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div className="px-5 lg:px-24 mx-auto max-w-screen-2xl py-10">
+                <div className="pt-10">
+                    <div className="flex gap-5 items-center">
+                        <h2 className="text-xl font-semibold text-[#071518] w-1/5">
+                            Visual Output
+                        </h2>
+                        <p className="text-base leading-[32px] text-[#323232] w-4/5">
+                            MyCare’s visual output combined aesthetics and
+                            usability. A user-friendly interface, fresh color
+                            scheme, custom illustrations, and consistency
+                            resulted in an engaging shopping experience.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-10 mt-20">
+                    <Image
+                        src="/assets/case-study/pages/Phone Display.png"
+                        alt="MyCare"
+                        width={1920}
+                        height={1080}
+                        className="w-full h-[900px]"
+                    />
+                    <Image
+                        src="/assets/case-study/pages/App Poster.png"
+                        alt="MyCare"
+                        width={1920}
+                        height={1080}
+                        className="w-full h-[900px]"
+                    />
+                </div>
+                <div className="mt-10">
+                    <Image
+                        src="/assets/case-study/pages/MyCare App Mockups.png"
+                        alt="MyCare"
+                        width={1920}
+                        height={1080}
+                        className="w-full h-[900px]"
+                    />
+                </div>
+            </div>
+
+            <div className="px-5 lg:px-24 mx-auto max-w-screen-2xl pb-10">
                 <div className="pt-10">
                     <div className="flex gap-5 items-center">
                         <h2 className="text-xl font-semibold text-[#071518] w-1/5">
