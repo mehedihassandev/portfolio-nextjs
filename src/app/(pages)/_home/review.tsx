@@ -40,10 +40,15 @@ export default function Review() {
         <>
             <div className="mx-auto px-5 lg:px-24 max-w-screen-2xl pt-28 pb-10">
                 <div className="items-end justify-between sm:flex sm:pe-6 lg:pe-8">
-                    <h2 className="text-[40px] leading-[54px]">
-                        Our Customers Say <br /> Something{" "}
-                        <span className="text-primary">About Us</span>
-                    </h2>
+                    <div>
+                        <h3 className="text-primary text-xl pb-3">
+                            Testimonial
+                        </h3>
+                        <h2 className="text-[40px] leading-[54px] font-semibold">
+                            Our Customers Say <br /> Something{" "}
+                            <span className="text-primary">About Us</span>
+                        </h2>
+                    </div>
                     <div className="lg:flex gap-4 hidden md:block">
                         <button
                             className="text-black"

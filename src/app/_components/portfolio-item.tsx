@@ -12,9 +12,9 @@ export const ProjectItem: FC<IProjectItemProps> = ({ item, isReversed }) => {
         <div
             className={`flex flex-col md:flex-row ${
                 isReversed ? "md:flex-row-reverse" : ""
-            } gap-10 md:gap-36 overflow-hidden`}
+            } gap-10 md:gap-16 overflow-hidden`}
         >
-            <div className="w-full md:w-1/2">
+            <div className="w-full">
                 <Image
                     src={item.imageUrl}
                     alt={item.title}

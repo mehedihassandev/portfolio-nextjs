@@ -7,13 +7,18 @@ import { contactFormSchema, ContactFormSchema } from "../_schemas";
 import { ErrorMessage } from "@app/_components";
 
 export const Footer = () => {
-    const [formData, setFormData] = useState<ContactFormSchema>(FromDefaultValues);
+    const [formData, setFormData] =
+        useState<ContactFormSchema>(FromDefaultValues);
     const [errors, setErrors] = useState<Partial<ContactFormSchema>>({});
-    const [debounceTimeout, setDebounceTimeout] = useState<NodeJS.Timeout | null>(null);
+    const [debounceTimeout, setDebounceTimeout] =
+        useState<NodeJS.Timeout | null>(null);
 
     const validateField = (name: keyof ContactFormSchema, value: string) => {
-        console.log('Validating field:', value)
-        const result = contactFormSchema.safeParse({ ...formData, [name]: value });
+        console.log("Validating field:", value);
+        const result = contactFormSchema.safeParse({
+            ...formData,
+            [name]: value,
+        });
         if (!result.success) {
             const fieldErrors = result.error.flatten().fieldErrors;
             setErrors((prevErrors) => ({
@@ -28,7 +33,9 @@ export const Footer = () => {
         }
     };
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const handleChange = (
+        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
         const { name, value } = e.target;
         setFormData((prev) => ({ ...prev, [name]: value }));
 
@@ -49,13 +56,16 @@ export const Footer = () => {
         if (!result.success) {
             const fieldErrors = result.error.flatten().fieldErrors;
             const transformedErrors = Object.fromEntries(
-                Object.entries(fieldErrors).map(([key, value]) => [key, value?.[0]])
+                Object.entries(fieldErrors).map(([key, value]) => [
+                    key,
+                    value?.[0],
+                ])
             );
             setErrors(transformedErrors);
         } else {
             setErrors({});
             // Handle form submission
-            console.log('Form data:', formData);
+            console.log("Form data:", formData);
             setFormData(FromDefaultValues);
         }
     };
@@ -124,7 +134,9 @@ export const Footer = () => {
                                             name="name"
                                             value={formData.name}
                                             onChange={handleChange}
-                                            title={errors.name ? errors.name : ""}
+                                            title={
+                                                errors.name ? errors.name : ""
+                                            }
                                         />
                                         <ErrorMessage message={errors.name} />
                                     </div>
@@ -152,7 +164,9 @@ export const Footer = () => {
                                             value={formData.phoneNumber}
                                             onChange={handleChange}
                                         />
-                                        <ErrorMessage message={errors.phoneNumber} />
+                                        <ErrorMessage
+                                            message={errors.phoneNumber}
+                                        />
                                     </div>
                                     <div className="w-full">
                                         <input
@@ -193,9 +207,13 @@ export const Footer = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 border-solid border-t border-t-black py-4 items-center justify-between px-5">
+                <div className="grid grid-cols-1 lg:grid-cols-2 border-solid border-t border-t-black py-4 items-center justify-between">
                     <p className="text-sm md:text-base text-black text-left font-medium leading-relaxed lg:leading-8">
-                        © 2024 Developed by{" "}
+                        © 2024 All Rights Reserved By Shihab Parves
+                    </p>
+
+                    <h4 className="text-sm md:text-base leading-[16px] text-black font-medium text-right pt-3 md:pt-0">
+                        Developed by{" "}
                         <a
                             className="text-primary"
                             href="https://www.mehedihassan.me/"
@@ -203,10 +221,6 @@ export const Footer = () => {
                         >
                             Md. Mehedi Hassan.
                         </a>
-                    </p>
-
-                    <h4 className="text-sm md:text-base leading-[16px] text-black font-medium text-right pt-3 md:pt-0">
-                        Designed by Shihab Parves
                     </h4>
                     {/* <div className="hidden md:flex justify-end gap-4">
                     <a
