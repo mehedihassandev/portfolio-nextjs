@@ -131,7 +131,7 @@ export default function CaseStudy() {
                 alt="MyCare"
                 width={1920}
                 height={1080}
-                className="w-full h-[1280px]"
+                className="w-full h-[1280px] mt-10"
             />
             <div className="bg-[#071518] mt-14 py-20">
                 <div className="px-5 lg:px-24 mx-auto max-w-screen-2xl">
