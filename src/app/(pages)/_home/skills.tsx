@@ -14,13 +14,13 @@ export default function Skills() {
                 className="px-5 lg:px-24 mx-auto max-w-screen-2xl m-auto"
                 id="skills"
             >
-                <div className="grid grid-cols-1 lg:grid-cols-2">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                     <div className="mt-10">
-                        <h2 className="text-[40px] font-bold text-black leading-[54px]">
+                        <h2 className="text-2xl md:text-[40px] font-bold text-black md:leading-[54px]">
                             Why Hire Me For Your <br />
                             Next <span className="text-primary">Project?</span>
                         </h2>
-                        <p className="text-[16px] leading-[24px] pt-2 pr-60 pb-10">
+                        <p className="text-[16px] leading-[24px] pt-2 md:pr-60 pb-10">
                             I’m specialist in UI/UX Designer. My passion is
                             designing & solving problems through user experience
                             and research.
