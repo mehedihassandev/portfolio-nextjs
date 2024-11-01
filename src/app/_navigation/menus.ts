@@ -9,7 +9,7 @@ export const menus = [
     {
         id: "about",
         linkTitle: "About",
-        linkUrl: ROUTES.ABOUT,
+        linkUrl: "#about",
     },
     {
         id: "portfolio",
