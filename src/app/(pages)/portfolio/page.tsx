@@ -1,6 +1,15 @@
 import { portfolioPageItems } from "@/app/_constant";
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
+
+export const metadata: Metadata = {
+    title: "Portfolio",
+    description: "Developed by MD. Mehedi Hassan",
+    alternates: {
+        canonical: "https://www.mehedihassan.me",
+    },
+};
 
 export default function PortfolioPage() {
     return (
@@ -10,7 +19,7 @@ export default function PortfolioPage() {
                 alt="ellipse"
                 width={660}
                 height={860}
-                className="absolute top-[550px] lg:top-[280px] right-[80px] w-[660px] h-[860px] z-10"
+                className="absolute top-[550px] lg:top-[280px] right-[80px] w-[660px] h-[860px] -z-10"
             />
             <section id="portfolio">
                 <Image

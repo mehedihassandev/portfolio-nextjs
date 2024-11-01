@@ -12,9 +12,9 @@ export default function About() {
             />
             <div
                 className="px-5 lg:px-24 mx-auto max-w-screen-2xl m-auto"
-                id="skills"
+                id="about"
             >
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 mb-14 md:mb-5">
                     <div className="col-span-1 lg:row-span-2">
                         <Image
                             src="/assets/about/about2.png"
