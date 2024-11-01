@@ -1,9 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 
-export const Loader = () => {
+const Loader: React.FC = () => {
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
@@ -15,8 +16,16 @@ export const Loader = () => {
     }
 
     return ReactDOM.createPortal(
-        <div className="fixed bg-black bg-opacity-75 h-screen top-0 left-0 w-full flex justify-center items-center z-[9999]">
-            <h1 className="text-white text-4xl">Loading...</h1>
+        <div className="h-screen bg-white">
+            <div className="flex justify-center items-center h-full">
+                <Image
+                    className="h-16 w-16"
+                    src="https://icons8.com/preloaders/preloaders/1488/Iphone-spinner-2.gif"
+                    width={64}
+                    height={64}
+                    alt="Loading..."
+                />
+            </div>
         </div>,
         document.body
     );
