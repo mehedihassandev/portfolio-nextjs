@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { menus } from "../_navigation/menus";
 import Link from "next/link";
@@ -19,10 +19,6 @@ export const Header = () => {
     const handleMenuItemClick = () => {
         setIsMenuOpen(false);
     };
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [pathname]);
 
     return (
         <header className="bg-white fixed top-0 left-0 w-full z-50 py-2">
