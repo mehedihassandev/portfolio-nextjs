@@ -47,3 +47,57 @@ export const images = [
         subtitle: "Redesigning smart Watch User Experience",
     },
 ];
+
+export const sections = [
+    {
+        title: "Problems",
+        content:
+            "From the survey we found user struggles, which are customized plans, inconvenience of visiting multiple Apps for unavailable plans, and missing pay Bills option.",
+    },
+    {
+        title: "Challenges",
+        content:
+            "We faced various design challenges, including creating effective filters for accurate results, optimizing thumb patterns for ease of use, and ensuring that the app is visually appealing while providing detailed information.",
+    },
+    {
+        title: "Our Solutions",
+        content:
+            "We designed a reliable Wallet system to boost Top-up Plans, accurate Plans descriptions, shop updates, and user-selected their customized plans so that users can find this app more reliable for purchases.",
+    },
+];
+
+export const steps = [
+    {
+        number: "1",
+        title: "Research",
+        description:
+            "In the research phase, we comprehensively study user needs, behaviors, and pain points through methods like interviews and data analysis to inform the design process effectively.",
+    },
+    {
+        number: "2",
+        title: "Design",
+        description:
+            "During the design phase, we create wireframes and prototypes, visually conceptualizing solutions. These serve as blueprints for the user interfaces structure, layout, and functionality.",
+    },
+    {
+        number: "3",
+        title: "Testing",
+        description:
+            "In the testing phase, we gather user feedback on prototypes, assess usability, and refine designs. This iterative process ensures the final product meets user expectations and needs.",
+    },
+];
+
+export const projectDetails = [
+    { title: "Client", content: "cwseychelles" },
+    { title: "CATEGORY", content: "Fintech" },
+    {
+        title: "LIVE View",
+        content: "Visit Playstore/AppStore",
+        underline: true,
+    },
+    { title: "TIMELINES", content: "6 Months" },
+    {
+        title: "Service we provide",
+        content: ["User Research", "UI Design", "Development", "Maintenance"],
+    },
+];
