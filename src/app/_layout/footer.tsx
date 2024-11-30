@@ -207,12 +207,12 @@ export const Footer = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 border-solid border-t border-t-black py-4 items-center justify-between">
-                    <p className="text-sm md:text-base text-black text-left font-medium leading-relaxed lg:leading-8">
+                <div className="grid grid-cols-1 border-solid border-t border-t-black py-4 items-center justify-center">
+                    <p className="text-sm md:text-base text-black text-center font-medium leading-relaxed lg:leading-8">
                         © 2024 All Rights Reserved By Shihab Parves
                     </p>
 
-                    <h4 className="text-sm md:text-base leading-[16px] text-black font-medium text-right pt-3 md:pt-0">
+                    {/* <h4 className="text-sm md:text-base leading-[16px] text-black font-medium text-right pt-3 md:pt-0">
                         Developed by{" "}
                         <a
                             className="text-primary"
@@ -221,7 +221,7 @@ export const Footer = () => {
                         >
                             Md. Mehedi Hassan.
                         </a>
-                    </h4>
+                    </h4> */}
                     {/* <div className="hidden md:flex justify-end gap-4">
                     <a
                         href="#"
