@@ -5,7 +5,7 @@ export const projectItems = [
             "Discover your ultimate biking adventure with the Sport Mountain Bikes Shop App. Your one-stop destination for top-quality mountain biking gear and more.",
         category: "Mobile Application",
         imageUrl: "/assets/project/project-1.png",
-        link: "#",
+        link: "https://dribbble.com/shots/22518885-Sport-Mountain-Bikes-Shop-App",
     },
     {
         title: "Hotel & Tourism Management Website",
@@ -13,7 +13,7 @@ export const projectItems = [
             "Explorers BD is an all-in-one online platform for travelers exploring Bangladesh. It provides hotel bookings, tour packages, and destination information.",
         category: "Website Design",
         imageUrl: "/assets/project/project-2.png",
-        link: "#",
+        link: "https://www.behance.net/gallery/165453577/Resort-Hotel-Booking-Landing-Page-Concept",
     },
     {
         title: "Easywax Cryptocurrency Website",
@@ -21,7 +21,7 @@ export const projectItems = [
             "The Easywax Cryptocurrency Wallet has been updated with a new design. Key features of the new design include a simpler interface, .....",
         category: "Web3 Design",
         imageUrl: "/assets/project/project-3.png",
-        link: "#",
+        link: "https://www.behance.net/gallery/168590889/Easywax-Cryptocurrency-Wallet-Landing-Page-(Redesign)",
     },
     {
         title: "Fintech Dashboard",
@@ -29,7 +29,7 @@ export const projectItems = [
             "NBDEXCOINs Fintech Dashboard is a comprehensive platform designed to provide users with a clear and intuitive overview of their financial assets and activities........",
         category: "Web Application",
         imageUrl: "/assets/project/project-4.png",
-        link: "#",
+        link: "https://www.behance.net/gallery/164995639/Fintech-Dashboard",
     },
 ];
 

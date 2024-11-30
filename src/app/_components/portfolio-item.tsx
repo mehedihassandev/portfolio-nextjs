@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FC } from "react";
 import { IItem } from "@app/_models";
+import Link from "next/link";
 
 interface IProjectItemProps {
     item: IItem;
@@ -8,6 +9,8 @@ interface IProjectItemProps {
 }
 
 export const ProjectItem: FC<IProjectItemProps> = ({ item, isReversed }) => {
+    const isExternal = item.link.startsWith("http");
+
     return (
         <div
             className={`flex flex-col md:flex-row ${
@@ -33,7 +36,11 @@ export const ProjectItem: FC<IProjectItemProps> = ({ item, isReversed }) => {
                 <p className="text-lg font-inter text-text_color">
                     {item.description}
                 </p>
-                <a href="#" className="pt-10" target="_blank">
+                <Link
+                    href={item.link}
+                    target={isExternal ? "_blank" : "_self"}
+                    rel={isExternal ? "noopener noreferrer" : undefined}
+                >
                     <Image
                         src="/assets/project/send.png"
                         alt="arrow"
@@ -41,7 +48,7 @@ export const ProjectItem: FC<IProjectItemProps> = ({ item, isReversed }) => {
                         height={64}
                         className="w-[44px] h-[44px]"
                     />
-                </a>
+                </Link>
             </div>
         </div>
     );
