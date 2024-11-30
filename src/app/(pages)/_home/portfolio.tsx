@@ -65,7 +65,7 @@ export default function Portfolio() {
                                                 alt="arrow"
                                                 width={64}
                                                 height={64}
-                                                className="w-[44px] h-[44px]"
+                                                className="w-[64px] h-[64px]"
                                             />
                                         </Link>
                                     </button>

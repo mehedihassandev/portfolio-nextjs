@@ -1,4 +1,4 @@
-export default function Slider() {
+export default function AchivementSlider() {
     return (
         <section className="w-full overflow-hidden whitespace-nowrap bg-green-500 py-4">
             <div className="marquee flex items-center space-x-8 text-white text-sm md:text-lg font-semibold">
