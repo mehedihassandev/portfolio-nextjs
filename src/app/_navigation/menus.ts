@@ -6,11 +6,11 @@ export const menus = [
         linkTitle: "Home",
         linkUrl: ROUTES.HOME,
     },
-    {
-        id: "about",
-        linkTitle: "About",
-        linkUrl: "#about",
-    },
+    // {
+    //     id: "about",
+    //     linkTitle: "About",
+    //     linkUrl: "#about",
+    // },
     {
         id: "portfolio",
         linkTitle: "Portfolio",

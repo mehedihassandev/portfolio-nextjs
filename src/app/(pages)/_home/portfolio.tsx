@@ -27,25 +27,49 @@ export default function Portfolio() {
                         return (
                             <div
                                 key={index}
-                                className="transition-transform duration-300 ease-in-out hover:-translate-y-4"
+                                className="relative transition-transform duration-300 ease-in-out hover:-translate-y-4 group"
                             >
-                                <Link
-                                    href={image.link}
-                                    target={isExternal ? "_blank" : "_self"}
-                                    rel={
-                                        isExternal
-                                            ? "noopener noreferrer"
-                                            : undefined
-                                    }
-                                >
-                                    <Image
-                                        src={image.src}
-                                        alt={image.alt}
-                                        width={300}
-                                        height={300}
-                                        className="w-full h-auto rounded-md cursor-pointer"
-                                    />
-                                </Link>
+                                <Image
+                                    src={image.src}
+                                    alt={image.alt}
+                                    width={300}
+                                    height={300}
+                                    className="w-full h-auto rounded-md cursor-pointer"
+                                />
+                                <div className="absolute inset-0 bg-[#0DB760EB] opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col items-start justify-center rounded-md">
+                                    <div className="pl-5">
+                                        <h2 className="text-white text-base pb-4 font-inter">
+                                            {image.header}
+                                        </h2>
+                                        <h2 className="text-white text-2xl font-bold pb-8 font-inter">
+                                            {image.title}
+                                        </h2>
+                                        <p className="text-white text-lg font-bold font-inter">
+                                            {image.subtitle}
+                                        </p>
+                                    </div>
+                                    <button className="flex items-center justify-center text-primary px-5 py-2 rounded-md mt-5 w-full">
+                                        <Link
+                                            href={image.link}
+                                            target={
+                                                isExternal ? "_blank" : "_self"
+                                            }
+                                            rel={
+                                                isExternal
+                                                    ? "noopener noreferrer"
+                                                    : undefined
+                                            }
+                                        >
+                                            <Image
+                                                src="/assets/project/send2.png"
+                                                alt="arrow"
+                                                width={64}
+                                                height={64}
+                                                className="w-[44px] h-[44px]"
+                                            />
+                                        </Link>
+                                    </button>
+                                </div>
                             </div>
                         );
                     })}
