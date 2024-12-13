@@ -5,6 +5,7 @@ import { contactInfo, FromDefaultValues } from "@app/_constant";
 import { useState, useEffect } from "react";
 import { contactFormSchema, ContactFormSchema } from "../_schemas";
 import { ErrorMessage } from "@app/_components";
+import emailjs from "emailjs-com"; // Add this import
 
 export const Footer = () => {
     const [formData, setFormData] =
@@ -14,7 +15,6 @@ export const Footer = () => {
         useState<NodeJS.Timeout | null>(null);
 
     const validateField = (name: keyof ContactFormSchema, value: string) => {
-        console.log("Validating field:", value);
         const result = contactFormSchema.safeParse({
             ...formData,
             [name]: value,
@@ -52,6 +52,10 @@ export const Footer = () => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
+        const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "";
+        const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "";
+        const userId = process.env.NEXT_PUBLIC_EMAILJS_USER_ID || "";
+
         const result = contactFormSchema.safeParse(formData);
         if (!result.success) {
             const fieldErrors = result.error.flatten().fieldErrors;
@@ -64,9 +68,18 @@ export const Footer = () => {
             setErrors(transformedErrors);
         } else {
             setErrors({});
-            // Handle form submission
-            console.log("Form data:", formData);
-            setFormData(FromDefaultValues);
+            // EmailJS integration
+            emailjs.send(
+                serviceId,
+                templateId,
+                formData,
+                userId
+            ).then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                setFormData(FromDefaultValues);
+            }).catch((error) => {
+                console.log('FAILED...', error);
+            });
         }
     };
 
