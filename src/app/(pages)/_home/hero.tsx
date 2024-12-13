@@ -26,9 +26,10 @@ export default function Hero() {
                             Experience
                         </h1>
                         <p className="text-[16px] leading-[24px] pt-5 lg:pr-52">
-                            An Enthusiastic UX/UI Designer with more than 4
-                            years of experience. Take your business to the next
-                            level with custom design solutions.
+                            An Enthusiastic UX/UI Designer dedicated to creating
+                            user-focused digital experiences. Elevate your
+                            business with custom design solutions that drive
+                            engagement and growth.
                         </p>
                         <div className="flex items-center gap-14">
                             <a className="bg-[#0DB760] text-white text-[16px] font-medium leading-[24px] px-[3rem] py-3 rounded-lg mt-10 ">

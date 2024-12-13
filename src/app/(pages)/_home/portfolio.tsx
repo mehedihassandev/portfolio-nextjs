@@ -32,9 +32,9 @@ export default function Portfolio() {
                                 <Image
                                     src={image.src}
                                     alt={image.alt}
-                                    width={300}
-                                    height={300}
-                                    className="w-full h-auto rounded-md cursor-pointer"
+                                    width={600}
+                                    height={600}
+                                    className="w-full h-full rounded-md cursor-pointer object-cover aspect-square"
                                 />
                                 <div className="absolute inset-0 bg-[#0DB760EB] opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col items-start justify-center rounded-md">
                                     <div className="pl-5">

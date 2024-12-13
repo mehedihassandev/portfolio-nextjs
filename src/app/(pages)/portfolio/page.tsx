@@ -50,8 +50,8 @@ export default function PortfolioPage() {
                                                 src={item.src}
                                                 className="animate-fade-in block w-full h-full scale-100 transform object-cover object-center transition duration-300 group-hover:scale-105"
                                                 alt={item.alt}
-                                                width={500}
-                                                height={500}
+                                                width={600}
+                                                height={600}
                                             />
                                         </div>
                                     </div>

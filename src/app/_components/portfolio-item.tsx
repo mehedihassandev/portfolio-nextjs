@@ -33,7 +33,7 @@ export const ProjectItem: FC<IProjectItemProps> = ({ item, isReversed }) => {
                 <h3 className="text-2xl font-bold text-black pb-3">
                     {item.title}
                 </h3>
-                <p className="text-lg font-inter text-text_color">
+                <p className="text-lg font-inter text-text_color mb-12">
                     {item.description}
                 </p>
                 <Link
@@ -46,7 +46,7 @@ export const ProjectItem: FC<IProjectItemProps> = ({ item, isReversed }) => {
                         alt="arrow"
                         width={64}
                         height={64}
-                        className="w-[44px] h-[44px]"
+                        className="w-[54px] h-[54px]"
                     />
                 </Link>
             </div>

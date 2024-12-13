@@ -32,20 +32,20 @@ export default function Skills() {
                     <div className="grid grid-cols-2 gap-10">
                         <div className="p-6 bg-[#fafafa] rounded-md">
                             <Image
-                                src="/assets/skill/diamond.png"
+                                src="/assets/skill/school.png"
                                 alt="diamond"
                                 width={28}
                                 height={28}
                                 className="w-[28px] h-[28px]"
                             />
                             <h5 className="mb-2 mt-4 text-[20px] leading-[20px] font-semibold tracking-tight text-black">
-                                Visual Design
+                                UX Research
                             </h5>
                             <p className="mb-3 font-normal text-black text-[14px] leading-[21px]">
-                                Create user interface design with unique &
-                                modern ideas
+                                Create digital user products with updated ideas
                             </p>
                         </div>
+
                         <div className="p-6 bg-[#fafafa] rounded-md relative top-28 left-0">
                             <Image
                                 src="/assets/skill/pulse.png"
@@ -61,19 +61,21 @@ export default function Skills() {
                                 Create advance design prototype with Figma apps.
                             </p>
                         </div>
+
                         <div className="p-6 bg-[#fafafa] rounded-md">
                             <Image
-                                src="/assets/skill/school.png"
+                                src="/assets/skill/diamond.png"
                                 alt="diamond"
                                 width={28}
                                 height={28}
                                 className="w-[28px] h-[28px]"
                             />
                             <h5 className="mb-2 mt-4 text-[20px] leading-[20px] font-semibold tracking-tight text-black">
-                                UX Research
+                                Visual Design
                             </h5>
                             <p className="mb-3 font-normal text-black text-[14px] leading-[21px]">
-                                Create digital user products with updated ideas
+                                Create user interface design with unique &
+                                modern ideas
                             </p>
                         </div>
                     </div>

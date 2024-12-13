@@ -23,7 +23,7 @@ export default function Achievement() {
                 </div>
                 <div className="flex flex-col justify-start items-center lg:items-start text-center lg:text-left">
                     <h1 className="text-3xl md:text-5xl font-bold text-primary leading-[10px] md:leading-[48px]">
-                        100+
+                        100%
                     </h1>
                     <p className="text-base md:text-[28px] leading-[28px] pt-5 capitalize">
                         Clients satisfied
