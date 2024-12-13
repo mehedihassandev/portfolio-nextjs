@@ -25,7 +25,7 @@ export default function Hero() {
                             </span>
                             Experience
                         </h1>
-                        <p className="text-[16px] leading-[24px] pt-5 lg:pr-52">
+                        <p className="text-[16px] leading-[24px] pt-5">
                             An Enthusiastic UX/UI Designer dedicated to creating
                             user-focused digital experiences. Elevate your
                             business with custom design solutions that drive

@@ -195,7 +195,7 @@ export const Footer = () => {
                                 ></textarea>
                                 <ErrorMessage message={errors.textarea} />
                             </div>
-                            <div className="text-right">
+                            <div className="text-left">
                                 <button
                                     type="submit"
                                     className="w-60 bg-[#0DB760] text-white px-6 py-3 font-xl rounded-md sm:mb-0"

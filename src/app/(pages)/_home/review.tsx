@@ -43,7 +43,7 @@ export default function Review() {
                         <h3 className="text-primary text-xl pb-3">
                             Testimonial
                         </h3>
-                        <h2 className="text-[40px] leading-[54px] font-semibold">
+                        <h2 className="text-[40px] leading-[54px] font-bold">
                             Our Customers Say <br /> Something{" "}
                             <span className="text-primary">About Us</span>
                         </h2>
