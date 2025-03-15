@@ -67,14 +67,14 @@ export const portfolioPageItems = [
         title: "National Geographic App",
         subtitle: "05 -- Website",
         alt: "National Geographic App",
-        link: "https://dribbble.com/shots/23752222-National-Geographic-App",
+        link: "https://www.behance.net/gallery/184364659/Cosmetics-Landing-Page-Concept",
     },
     {
         src: "/assets/portfolio/6.National Geographic App.png",
         title: "Cosmetics Landing Page",
         subtitle: "06 -- App",
         alt: "Cosmetics Landing Page",
-        link: "https://www.behance.net/gallery/184364659/Cosmetics-Landing-Page-Concept",
+        link: "https://dribbble.com/shots/23752222-National-Geographic-App",
     },
     {
         src: "/assets/portfolio/7.Sound Orbit Mockup.png",
