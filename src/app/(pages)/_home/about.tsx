@@ -31,12 +31,12 @@ export default function About() {
                             Md.Shihab Parves
                         </h2>
                         <h3 className="text-[20px] lg:text-[24px] font-semibold text-black pb-7">
-                            UX/UI Designer | Webflow Designer
+                            Product Designer | UX/UI Designer | Webflow Designer
                         </h3>
                         <p className="text-[16px] text-[#323433] leading-[24px] font-semibold pt-2 pb-5">
-                            Self-motivated Mid-Level UX/UI Designer with 4+
-                            years of experience in creating digital products
-                            across diverse sectors, including POS systems, SaaS,
+                            Self-motivated Product(UX/UI) Designer with 4+ years
+                            of experience in creating digital products across
+                            diverse sectors, including POS systems, SaaS,
                             enterprise software, mobile apps, fintech, and
                             crypto websites.
                         </p>

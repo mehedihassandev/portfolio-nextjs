@@ -1,7 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { contactInfo, FromDefaultValues } from "@app/_constant";
+import {
+    contactInfo,
+    FromDefaultValues,
+    socialMediaLinks,
+} from "@app/_constant";
 import { useState, useEffect } from "react";
 import { contactFormSchema, ContactFormSchema } from "../_schemas";
 import { ErrorMessage } from "@app/_components";
@@ -69,17 +73,15 @@ export const Footer = () => {
         } else {
             setErrors({});
             // EmailJS integration
-            emailjs.send(
-                serviceId,
-                templateId,
-                formData,
-                userId
-            ).then((response) => {
-                console.log('SUCCESS!', response.status, response.text);
-                setFormData(FromDefaultValues);
-            }).catch((error) => {
-                console.log('FAILED...', error);
-            });
+            emailjs
+                .send(serviceId, templateId, formData, userId)
+                .then((response) => {
+                    console.log("SUCCESS!", response.status, response.text);
+                    setFormData(FromDefaultValues);
+                })
+                .catch((error) => {
+                    console.log("FAILED...", error);
+                });
         }
     };
 
@@ -220,8 +222,8 @@ export const Footer = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 border-solid border-t border-t-black py-4 items-center justify-center">
-                    <p className="text-sm md:text-base text-black text-center font-medium leading-relaxed lg:leading-8">
+                <div className="grid grid-cols-2 border-solid border-t border-t-black py-4 items-center justify-between">
+                    <p className="text-sm md:text-base text-black font-medium leading-relaxed lg:leading-8">
                         © 2024 All Rights Reserved By Shihab Parves
                     </p>
 
@@ -235,52 +237,23 @@ export const Footer = () => {
                             Md. Mehedi Hassan.
                         </a>
                     </h4> */}
-                    {/* <div className="hidden md:flex justify-end gap-4">
-                    <a
-                        href="#"
-                        className="text-[16px] leading-[16px] text-black text-right"
-                    >
-                        <Image
-                            src="/assets/facebook.png"
-                            alt="facebook"
-                            width={25}
-                            height={25}
-                        />
-                    </a>
-                    <a
-                        href="#"
-                        className="text-[16px] leading-[16px] text-black text-right"
-                    >
-                        <Image
-                            src="/assets/twitter.png"
-                            alt="facebook"
-                            width={25}
-                            height={25}
-                        />
-                    </a>
-                    <a
-                        href="#"
-                        className="text-[16px] leading-[16px] text-black text-right"
-                    >
-                        <Image
-                            src="/assets/linkedin.png"
-                            alt="facebook"
-                            width={25}
-                            height={25}
-                        />
-                    </a>
-                    <a
-                        href="#"
-                        className="text-[16px] leading-[16px] text-black text-right"
-                    >
-                        <Image
-                            src="/assets/instagram.png"
-                            alt="facebook"
-                            width={25}
-                            height={25}
-                        />
-                    </a>
-                </div> */}
+                    <div className="hidden md:flex justify-end gap-4">
+                        {socialMediaLinks.map((link, index) => (
+                            <a
+                                key={index}
+                                href={link.href}
+                                className="text-[16px] leading-[16px] text-black text-right"
+                                target="_blank"
+                            >
+                                <Image
+                                    src={link.src}
+                                    alt={link.alt}
+                                    width={30}
+                                    height={30}
+                                />
+                            </a>
+                        ))}
+                    </div>
                 </div>
             </div>
         </footer>
