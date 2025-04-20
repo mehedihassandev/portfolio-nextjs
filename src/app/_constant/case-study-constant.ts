@@ -80,6 +80,18 @@ export const steps = [
         description:
             "In the testing phase, we gather user feedback on prototypes, assess usability, and refine designs. This iterative process ensures the final product meets user expectations and needs.",
     },
+    {
+        number: "4",
+        title: "Implementation",
+        description:
+            "In the implementation phase, we focus on translating the designed user interface into a functional product, adhering to the established design guidelines and aesthetics. - implementation",
+    },
+    {
+        number: "5",
+        title: "Iteration",
+        description:
+            "During the iteration phase, we revisit and refine the design and functionality based on feedback and insights gathered from user testing and evaluation, ensuring continuous improvement",
+    },
 ];
 
 export const projectDetails = [
