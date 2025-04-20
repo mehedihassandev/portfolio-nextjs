@@ -3,7 +3,6 @@
 import { useRef, useState } from "react";
 import Slider from "react-slick";
 import { steps } from "@/app/_constant";
-import "./style.css";
 
 export default function DesignPreccess() {
     const sliderRef = useRef<Slider>(null);
