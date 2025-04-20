@@ -40,15 +40,15 @@ export default function ProblemSolution() {
                                     alt="MyCare"
                                     width={400}
                                     height={400}
-                                    className="col-span-5 w-[450px] h-auto md:h-[390px]"
+                                    className="col-span-12 md:col-span-5 w-[450px] h-auto md:h-[390px]"
                                 />
-                                <h2 className="col-span-7 text-xl md:text-2xl font-normal text-black leading-relaxed bg-[#FBFBFB] p-10 rounded-lg">
+                                <h2 className="col-span-12 md:col-span-7 text-xl md:text-2xl font-normal text-black leading-relaxed bg-[#FBFBFB] p-10 rounded-lg">
                                     {item.text}
                                 </h2>
                             </>
                         ) : (
                             <>
-                                <h2 className="col-span-7 text-xl md:text-2xl font-normal text-black leading-relaxed bg-[#FBFBFB] p-10 rounded-lg">
+                                <h2 className="col-span-12 md:col-span-7 text-xl md:text-2xl font-normal text-black leading-relaxed bg-[#FBFBFB] p-10 rounded-lg">
                                     {item.text}
                                 </h2>
                                 <Image
@@ -56,7 +56,7 @@ export default function ProblemSolution() {
                                     alt="MyCare"
                                     width={400}
                                     height={400}
-                                    className="col-span-5 w-[200px] h-auto md:h-[400px]"
+                                    className="col-span-12 md:col-span-5 w-[200px] h-auto md:h-[400px]"
                                 />
                             </>
                         )}
