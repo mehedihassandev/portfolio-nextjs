@@ -33,7 +33,7 @@ export const images = [
     {
         src: "/assets/case-study/vojbari.png",
         alt: "case-study-2",
-        link: LINKS.CASE_STUDY,
+        link: "https://www.behance.net/gallery/199124685/Vojbari-Food-Delivery-App",
         header: "UX Case Study",
         title: "Vojbari Food Delivery App",
         subtitle: "Designing for User Engagement and Retention",
@@ -41,28 +41,23 @@ export const images = [
     {
         src: "/assets/case-study/MyCare.png",
         alt: "case-study-3",
-        link: "https://www.behance.net/gallery/199124685/Vojbari-Food-Delivery-App",
+        link: LINKS.CASE_STUDY,
         header: "UX Case Study",
         title: "MyCare App",
         subtitle: "Wallet app for offers, bills, & more",
     },
 ];
 
-export const sections = [
+export const problemSolutionData = [
     {
-        title: "Problems",
-        content:
-            "From the survey we found user struggles, which are customized plans, inconvenience of visiting multiple Apps for unavailable plans, and missing pay Bills option.",
+        text: "From the survey we found user struggles, which are customized plans, inconvenience of visiting multiple Apps for unavailable plans, and missing pay Bills option.",
+        image: "/assets/case-study/problemSolution/problem.png",
+        reverse: false, // Text on the left, image on the right
     },
     {
-        title: "Challenges",
-        content:
-            "We faced various design challenges, including creating effective filters for accurate results, optimizing thumb patterns for ease of use, and ensuring that the app is visually appealing while providing detailed information.",
-    },
-    {
-        title: "Our Solutions",
-        content:
-            "We designed a reliable Wallet system to boost Top-up Plans, accurate Plans descriptions, shop updates, and user-selected their customized plans so that users can find this app more reliable for purchases.",
+        text: "We designed a reliable Wallet system to boost Top-up Plans, accurate Plans descriptions, shop updates, and user-selected their customized plans so that users can find this app more reliable for purchases.",
+        image: "/assets/case-study/problemSolution/solution.png",
+        reverse: true, // Image on the left, text on the right
     },
 ];
 
@@ -85,6 +80,18 @@ export const steps = [
         description:
             "In the testing phase, we gather user feedback on prototypes, assess usability, and refine designs. This iterative process ensures the final product meets user expectations and needs.",
     },
+    {
+        number: "4",
+        title: "Implementation",
+        description:
+            "In the implementation phase, we focus on translating the designed user interface into a functional product, adhering to the established design guidelines and aesthetics. - implementation",
+    },
+    {
+        number: "5",
+        title: "Iteration",
+        description:
+            "During the iteration phase, we revisit and refine the design and functionality based on feedback and insights gathered from user testing and evaluation, ensuring continuous improvement",
+    },
 ];
 
 export const projectDetails = [
@@ -94,6 +101,7 @@ export const projectDetails = [
         title: "LIVE View",
         content: "Visit Playstore/AppStore",
         underline: true,
+        link: "https://www.figma.com/proto/Qa2j4u8aqPefkkSIDeOBQ5/MyCare-App_EXOS-System?page-id=1%3A5600&node-id=1897-6317&starting-point-node-id=1897%3A7267&t=kDMgdg4ld5Kbti3W-1",
     },
     { title: "TIMELINES", content: "6 Months" },
     {

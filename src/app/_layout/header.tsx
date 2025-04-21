@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { CiMenuFries } from "react-icons/ci";
 import { IoIosClose } from "react-icons/io";
 import { Link as ScrollLink } from "react-scroll";
+import { LINKS } from "../_navigation/route-constant";
 
 export const Header = () => {
     const pathname = usePathname();
@@ -29,7 +30,10 @@ export const Header = () => {
                         alt="Logo"
                         width={150}
                         height={50}
-                        className="w-[160px] h-[35px] lg:w-[190px] lg:h-[40px]"
+                        className="w-[160px] h-[35px] lg:w-[190px] lg:h-[40px] cursor-pointer"
+                        onClick={() => {
+                            window.location.href = LINKS.HOME;
+                        }}
                     />
 
                     <button
