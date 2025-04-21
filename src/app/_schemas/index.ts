@@ -1,1 +1,1 @@
-export * from "./contactFormSchema";
+export * from './contactFormSchema';
